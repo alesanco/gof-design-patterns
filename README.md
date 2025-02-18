@@ -54,15 +54,23 @@ This balance of **static** (**Java**, **C#**, **C++**) and **dynamic** (**Python
 ```
 
 Each **design pattern** has:
-- **Language-specific subfolders** (`Cpp/`, `CSharp/`, `Java/`, `Python/`) containing the code implementations.
+- **Language-specific subfolders** (`Cpp/`, `CSharp/`, `Java/`, `JavaScript/`, `Python/`) containing the code implementations.
 - **Documentation** (`README.md`) explaining the pattern, applicable to all languages.
 
 The **naming convention** follows the following rules:
 
-| Language | Folder Naming | File Naming |
-|----------|---------------|-------------|
-**Java**, **C#**, **C++** | **PascalCase** (`Singleton/`, `FactoryMethod/`) | **PascalCase** (`Singleton.java`, `FactoryMethod.cs`, `Singleton.cpp`) |
-**Python** | **PascalCase** (`Creational/`) | **snake_case** (`singleton.py`, `factory_method.py`)
+| Language | Folder Naming | File Naming | Main Execution File |
+|----------|---------------|-------------|---------------------|
+| **Java** | PascalCase (`Singleton/`) | PascalCase (`Singleton.java`) | `Main.java` |
+| **C#** | PascalCase (`Singleton/`) | PascalCase (`Singleton.cs`) | `Program.cs` |
+| **C++** | PascalCase (`Singleton/`) | PascalCase (`Singleton.cpp`) | `Main.cpp` |
+| **Python** | PascalCase (`Singleton/`) | snake_case (`singleton.py`) | `main.py` |
+| **JavaScript** | PascalCase (`Singleton/`) | camelCase (`singleton.js`) | `main.js` |
+
+**Why This Structure?**
+- **Consistent & Readable:** Matches each language’s standard conventions.  
+- **Unified Execution Naming:** The **"main"** file name is consistent across languages (`Main.java`, `main.py`, `main.js`, etc.).  
+- **Easier Comparison:** This makes it simpler to compare implementations across different programming paradigms.  
 
 ---
 
