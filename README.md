@@ -131,8 +131,8 @@ For example, to run the **Singleton** pattern:
 **Java**:
 ```
 cd Creational/Singleton/Java
-javac Singleton.java
-java Singleton
+javac Singleton.java Main.java
+java Main
 ```
 
 **C#**:
@@ -153,7 +153,7 @@ g++ Singleton.o SingletonInstance.o Main.o -o singleton
 **Python**:
 ```
 cd Creational/Singleton/Python
-python singleton.py
+python3 main.py
 ```
 
 **JavaScript**:
