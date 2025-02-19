@@ -156,11 +156,19 @@ cd Creational/Singleton/Python
 python singleton.py
 ```
 
-**JavaScript** (Node.js):
+**JavaScript**:
 ```
 cd Creational/Singleton/JavaScript
 node main.js
 ```
+
+All examples are tested on **Debian 12** with the following language-specific dependencies:
+
+- **Java**: OpenJDK **17.0.14** (Release: **2025-01-21**)
+- **C#**: .NET SDK **8.0.406**
+- **C++**: GCC/G++ **12.2.0** (Debian **12.2.0-14**)
+- **Python**: Python **3.11.2**
+- **JavaScript**: Node.js **18.19.0** and npm **9.2.0**
 
 ## 🏷️ License
 This project is licensed under the MIT License.
