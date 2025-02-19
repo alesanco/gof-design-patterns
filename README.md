@@ -34,10 +34,12 @@ This balance of **static** (**Java**, **C#**, **C++**) and **dynamic** (**Python
 │   └── Singleton
 │       ├── Cpp
 │       │   ├── Main.cpp
-│       │   └── Singleton.cpp
+│       │   ├── Singleton.cpp
+│       │   └── SingletonInstance.cpp
 │       ├── CSharp
 │       │   ├── Program.cs
-│       │   └── Singleton.cs
+│       │   ├── Singleton.cs
+│       │   └── SingletonApp.csproj
 │       ├── Java
 │       │   ├── Main.java
 │       │   └── Singleton.java
@@ -136,13 +138,15 @@ java Singleton
 **C#**:
 ```
 cd Creational/Singleton/CSharp
-dotnet run Singleton.cs
+dotnet build
+dotnet run
 ```
 
 **C++**:
 ```
 cd Creational/Singleton/Cpp
-g++ Singleton.cpp -o singleton
+g++ -c Singleton.cpp SingletonInstance.cpp Main.cpp
+g++ Singleton.o SingletonInstance.o Main.o -o singleton
 ./singleton
 ```
 
