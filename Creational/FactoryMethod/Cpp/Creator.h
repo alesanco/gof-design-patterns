@@ -5,8 +5,8 @@
 
 class Creator {
 public:
-  virtual Product* createProduct() = 0; // Factory Method
-  virtual ~Creator() {}                 // Virtual destructor
+  virtual Product* createProduct() = 0;
+  virtual ~Creator() = default;
 };
 
 #endif // CREATOR_H

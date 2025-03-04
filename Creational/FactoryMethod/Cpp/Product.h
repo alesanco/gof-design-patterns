@@ -3,8 +3,8 @@
 
 class Product {
 public:
-  virtual void use() = 0; // Pure virtual function
-  virtual ~Product() {}   // Virtual destructor for proper cleanup
+  virtual void use() = 0;
+  virtual ~Product() = default;
 };
 
 #endif // PRODUCT_H
