@@ -2,7 +2,7 @@
 public class Singleton {
   private static Singleton? instance = null;
   
-  private Singleton() {} // Private constructor
+  private Singleton() {}
 
   public static Singleton GetInstance() {
     if (instance == null) {

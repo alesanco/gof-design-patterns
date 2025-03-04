@@ -5,7 +5,7 @@
 class Singleton {
 private:
   static Singleton* instance;
-  Singleton() {} // Private constructor
+  Singleton() {}
 
 public:
   static Singleton* GetInstance();
