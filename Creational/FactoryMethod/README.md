@@ -143,6 +143,305 @@ class Program {
 }
 ```
 
+### **C++ Implementation**
+```cpp
+// Product.h
+#ifndef PRODUCT_H
+#define PRODUCT_H
+
+class Product {
+public:
+  virtual void use() = 0;
+  virtual ~Product() = default;
+};
+
+#endif // PRODUCT_H
+```
+```cpp
+// ConcreteProductA.h
+#ifndef CONCRETE_PRODUCT_A_H
+#define CONCRETE_PRODUCT_A_H
+
+#include "Product.h"
+
+class ConcreteProductA : public Product {
+public:
+  void use() override;
+};
+
+#endif // CONCRETE_PRODUCT_A_H
+```
+```cpp
+// ConcreteProductA.cpp
+#include "ConcreteProductA.h"
+#include <iostream>
+
+void ConcreteProductA::use() {
+  std::cout << "Using Product A" << std::endl;
+}
+```
+```cpp
+// ConcreteProductB.h
+#ifndef CONCRETE_PRODUCT_B_H
+#define CONCRETE_PRODUCT_B_H
+
+#include "Product.h"
+
+class ConcreteProductB : public Product {
+public:
+  void use() override;
+};
+
+#endif // CONCRETE_PRODUCT_B_H
+```
+```cpp
+// ConcreteProductB.cpp
+#include "ConcreteProductB.h"
+#include <iostream>
+
+void ConcreteProductB::use() {
+  std::cout << "Using Product B" << std::endl;
+}
+```
+```cpp
+// Creator.h
+#ifndef CREATOR_H
+#define CREATOR_H
+
+#include "Product.h"
+
+class Creator {
+public:
+  virtual Product* createProduct() = 0;
+  virtual ~Creator() = default;
+};
+
+#endif // CREATOR_H
+```
+```cpp
+// ConcreteCreatorA.h
+#ifndef CONCRETE_CREATOR_A_H
+#define CONCRETE_CREATOR_A_H
+
+#include "Creator.h"
+
+class ConcreteCreatorA : public Creator {
+public:
+  Product* createProduct() override;
+};
+
+#endif // CONCRETE_CREATOR_A_H
+```
+```cpp
+// ConcreteCreatorA.cpp
+#include "ConcreteCreatorA.h"
+#include "ConcreteProductA.h"
+
+Product* ConcreteCreatorA::createProduct() {
+  return new ConcreteProductA();
+}
+```
+```cpp
+// ConcreteCreatorB.h
+#ifndef CONCRETE_CREATOR_B_H
+#define CONCRETE_CREATOR_B_H
+
+#include "Creator.h"
+
+class ConcreteCreatorB : public Creator {
+public:
+  Product* createProduct() override;
+};
+
+#endif // CONCREATOR_B_H
+```
+```cpp
+// ConcreteCreatorB.cpp
+#include "ConcreteCreatorB.h"
+#include "ConcreteProductB.h"
+
+Product* ConcreteCreatorB::createProduct() {
+  return new ConcreteProductB();
+}
+```
+```cpp
+// Main.cpp
+#include <iostream>
+#include "ConcreteCreatorA.h"
+#include "ConcreteCreatorB.h"
+
+int main() {
+  Creator* creatorA = new ConcreteCreatorA();
+  Product* productA = creatorA->createProduct();
+  productA->use();
+
+  Creator* creatorB = new ConcreteCreatorB();
+  Product* productB = creatorB->createProduct();
+  productB->use();
+
+  // Clean up memory
+  delete productA;
+  delete productB;
+  delete creatorA;
+  delete creatorB;
+
+  return 0;
+}
+```
+
+### **Python Implementation**
+```python
+# product.py
+from abc import ABC, abstractmethod
+
+class Product(ABC):
+  @abstractmethod
+  def use(self):
+    pass
+```
+```python
+# concrete_product_a.py
+from product import Product
+
+class ConcreteProductA(Product):
+  def use(self):
+    print("Using Product A")
+```
+```python
+# concrete_product_b.py
+from product import Product
+
+class ConcreteProductB(Product):
+  def use(self):
+    print("Using Product B")
+```
+```python
+# creator.py
+from abc import ABC, abstractmethod
+from product import Product
+
+class Creator(ABC):
+  @abstractmethod
+  def create_product(self) -> Product:
+    pass
+```
+```python
+# concrete_creator_a.py
+from creator import Creator
+from concrete_product_a import ConcreteProductA
+
+class ConcreteCreatorA(Creator):
+  def create_product(self) -> ConcreteProductA:
+    return ConcreteProductA()
+```
+```python
+# concrete_creator_b.py
+from creator import Creator
+from concrete_product_b import ConcreteProductB
+
+class ConcreteCreatorB(Creator):
+  def create_product(self) -> ConcreteProductB:
+    return ConcreteProductB()
+```
+```python
+# main.py
+from concrete_creator_a import ConcreteCreatorA
+from concrete_creator_b import ConcreteCreatorB
+
+if __name__ == "__main__":
+  creator_a = ConcreteCreatorA()
+  product_a = creator_a.create_product()
+  product_a.use()
+
+  creator_b = ConcreteCreatorB()
+  product_b = creator_b.create_product()
+  product_b.use()
+```
+
+### **JavaScript Implementation**
+```javascript
+// product.js
+class Product {
+  use() {
+    throw new Error("Method 'use()' must be implemented.");
+  }
+}
+
+module.exports = Product;
+```
+```javascript
+// concreteProductA.js
+const Product = require("./product");
+
+class ConcreteProductA extends Product {
+  use() {
+    console.log("Using Product A");
+  }
+}
+
+module.exports = ConcreteProductA;
+```
+```javascript
+const Product = require("./product");
+
+class ConcreteProductB extends Product {
+  use() {
+    console.log("Using Product B");
+  }
+}
+
+module.exports = ConcreteProductB;
+```
+```javascript
+// creator.js
+class Creator {
+  createProduct() {
+    throw new Error("Method 'createProduct()' must be implemented.");
+  }
+}
+
+module.exports = Creator;
+```
+```javascript
+// concreteCreatorA.js
+const Creator = require("./creator");
+const ConcreteProductA = require("./concreteProductA");
+
+class ConcreteCreatorA extends Creator {
+  createProduct() {
+    return new ConcreteProductA();
+  }
+}
+
+module.exports = ConcreteCreatorA;
+```
+```javascript
+// concreteCreatorB.js
+const Creator = require("./creator");
+const ConcreteProductB = require("./concreteProductB");
+
+class ConcreteCreatorB extends Creator {
+  createProduct() {
+    return new ConcreteProductB();
+  }
+}
+
+module.exports = ConcreteCreatorB;
+```
+```javascript
+// main.js
+const ConcreteCreatorA = require("./concreteCreatorA");
+const ConcreteCreatorB = require("./concreteCreatorB");
+
+const creatorA = new ConcreteCreatorA();
+const productA = creatorA.createProduct();
+productA.use();
+
+const creatorB = new ConcreteCreatorB();
+const productB = creatorB.createProduct();
+productB.use();
+```
+
 ## 📌 Running the Code
 To test the **Factory Method pattern**, run the following commands:
 

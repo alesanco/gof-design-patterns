@@ -1,3 +1,4 @@
+// concreteCreatorB.js
 const Creator = require("./creator");
 const ConcreteProductB = require("./concreteProductB");
 

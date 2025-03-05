@@ -1,3 +1,4 @@
+// concreteProductA.js
 const Product = require("./product");
 
 class ConcreteProductA extends Product {
