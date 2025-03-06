@@ -9,6 +9,9 @@ Use the **Factory Method pattern** when:
 - You need to **extend the creation logic** without modifying existing code.
 - A class **doesn’t know what specific subclass it should instantiate**.
 
+## 📌 Example: Product and Creator
+Imagine we are designing a **Product Creation System** where different types of products are created dynamically. Instead of instantiating products directly, we use a **Factory Method** to determine which product to create at runtime.
+
 ## 📌 Implementation in Different Languages
 Each language implements the **Factory Method pattern** differently based on its capabilities.
 

@@ -9,6 +9,9 @@ Use the **Singleton pattern** when:
 - You want to **prevent multiple instances** from being created (e.g., a database connection pool).
 - Global access is required, but **without using global variables**.
 
+## 📌 Example: Logger System
+Imagine we are designing a **Logger System** where all log messages must be written to the same log file. We need to ensure that only **one instance** of the logger exists throughout the application.
+
 ## 📌 Implementation in Different Languages
 Each language implements the **Singleton pattern** differently based on its capabilities.
 

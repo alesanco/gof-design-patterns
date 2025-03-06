@@ -9,6 +9,9 @@ Use the **Prototype pattern** when:
 - You need **copies of an existing object with modifications**.
 - You want to **avoid creating subclasses for variations**.
 
+## 📌 Example: Shape Cloning
+Imagine we are designing a **Shape Cloning System** where we can create copies of existing **Circles** and **Squares** instead of manually constructing them.
+
 ## 📌 Implementation in Different Languages
 Each language implements the **Prototype pattern** differently based on its capabilities.
 

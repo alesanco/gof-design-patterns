@@ -10,6 +10,15 @@ Use the **Builder pattern** when:
 - You want to avoid **large constructors with multiple parameters**.
 - You need an **immutable object** where all properties are set at once.
 
+## 📌 Example: Car Builder
+Imagine we are designing a **Car Builder** that allows us to create cars **step by step** with optional features:
+- **Engine type** (e.g., Petrol, Diesel, Electric)
+- **GPS system** (Yes/No)
+- **Sunroof** (Yes/No)
+- **Seats** (e.g., Standard, Leather)
+
+Instead of a constructor with many parameters, we build the car incrementally.
+
 ## 📌 Implementation in Different Languages
 Each language implements the **Builder pattern** differently based on its capabilities.
 

@@ -9,6 +9,16 @@ Use the **Abstract Factory pattern** when:
 - Your code **should not depend on specific concrete classes**.
 - You want to **ensure consistency** across product families.
 
+## 📌 Example: Shape Factories
+Imagine we are developing a rendering system that supports **2D and 3D rendering**. We want to generate different **shapes** and render them in either **2D or 3D mode**, using the appropriate rendering system.
+
+| **Factory Type** | **Shape**    | **Renderer**   |
+|-----------------|------------|--------------|
+| **2D Factory**  | `Circle`    | `TwoDRenderer` |
+| **2D Factory**  | `Square`    | `TwoDRenderer` |
+| **3D Factory**  | `Circle`    | `ThreeDRenderer` |
+| **3D Factory**  | `Square`    | `ThreeDRenderer` |
+
 ## 📌 Implementation in Different Languages
 Each language implements the **Abstract Factory pattern** differently based on its capabilities.
 
