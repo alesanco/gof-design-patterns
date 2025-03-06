@@ -1,4 +1,5 @@
 // ConcreteCreatorB.cpp
+
 #include "ConcreteCreatorB.h"
 #include "ConcreteProductB.h"
 

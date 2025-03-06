@@ -1,4 +1,5 @@
 # main.py
+
 from render_mode import RenderMode
 from shape_type import ShapeType
 from two_d_shape_factory import TwoDShapeFactory

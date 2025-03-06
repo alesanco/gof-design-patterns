@@ -1,7 +1,6 @@
 // main.js
 
 const logger1 = require("./logger");
-
 logger1.log("Initializing the system...");
 
 const logger2 = require("./logger");

@@ -18,12 +18,14 @@ Each language implements the **Factory Method pattern** differently based on its
 ### **Java Implementation**
 ```java
 // Product.java
+
 public interface Product {
   void use();
 }
 ```
 ```java
 // ConcreteProductA.java
+
 public class ConcreteProductA implements Product {
   @Override
   public void use() {
@@ -33,6 +35,7 @@ public class ConcreteProductA implements Product {
 ```
 ```java
 // ConcreteProductB.java
+
 public class ConcreteProductB implements Product {
   @Override
   public void use() {
@@ -43,12 +46,14 @@ public class ConcreteProductB implements Product {
 ```
 ```java
 // Creator.java
+
 public abstract class Creator {
   public abstract Product createProduct();
 }
 ```
 ```java
 // ConcreteCreatorA.java
+
 public class ConcreteCreatorA extends Creator {
   @Override
   public Product createProduct() {
@@ -58,6 +63,7 @@ public class ConcreteCreatorA extends Creator {
 ```
 ```java
 // ConcreteCreatorB.java
+
 public class ConcreteCreatorB extends Creator {
   @Override
   public Product createProduct() {
@@ -67,6 +73,7 @@ public class ConcreteCreatorB extends Creator {
 ```
 ```java
 // Main.java
+
 public class Main {
   public static void main(String[] args) {
     Creator creatorA = new ConcreteCreatorA();
@@ -83,12 +90,14 @@ public class Main {
 ### **C# Implementation**
 ```csharp
 // IProduct.cs
+
 public interface IProduct {
   void Use();
 }
 ```
 ```csharp
 // ConcreteProductA.cs
+
 using System;
 
 public class ConcreteProductA : IProduct {
@@ -99,6 +108,7 @@ public class ConcreteProductA : IProduct {
 ```
 ```csharp
 // ConcreteProductB.cs
+
 using System;
 
 public class ConcreteProductB : IProduct {
@@ -109,12 +119,14 @@ public class ConcreteProductB : IProduct {
 ```
 ```csharp
 // Creator.cs
+
 public abstract class Creator {
   public abstract IProduct CreateProduct();
 }
 ```
 ```csharp
 // ConcreteCreatorA.cs
+
 public class ConcreteCreatorA : Creator {
   public override IProduct CreateProduct() {
     return new ConcreteProductA();
@@ -123,6 +135,7 @@ public class ConcreteCreatorA : Creator {
 ```
 ```csharp
 // ConcreteCreatorB.cs
+
 public class ConcreteCreatorB : Creator {
   public override IProduct CreateProduct() {
     return new ConcreteProductB();
@@ -131,6 +144,7 @@ public class ConcreteCreatorB : Creator {
 ```
 ```csharp
 // Program.cs
+
 using System;
 
 class Program {
@@ -149,6 +163,7 @@ class Program {
 ### **C++ Implementation**
 ```cpp
 // Product.h
+
 #ifndef PRODUCT_H
 #define PRODUCT_H
 
@@ -162,6 +177,7 @@ public:
 ```
 ```cpp
 // ConcreteProductA.h
+
 #ifndef CONCRETE_PRODUCT_A_H
 #define CONCRETE_PRODUCT_A_H
 
@@ -176,6 +192,7 @@ public:
 ```
 ```cpp
 // ConcreteProductA.cpp
+
 #include "ConcreteProductA.h"
 #include <iostream>
 
@@ -185,6 +202,7 @@ void ConcreteProductA::use() {
 ```
 ```cpp
 // ConcreteProductB.h
+
 #ifndef CONCRETE_PRODUCT_B_H
 #define CONCRETE_PRODUCT_B_H
 
@@ -199,6 +217,7 @@ public:
 ```
 ```cpp
 // ConcreteProductB.cpp
+
 #include "ConcreteProductB.h"
 #include <iostream>
 
@@ -208,6 +227,7 @@ void ConcreteProductB::use() {
 ```
 ```cpp
 // Creator.h
+
 #ifndef CREATOR_H
 #define CREATOR_H
 
@@ -223,6 +243,7 @@ public:
 ```
 ```cpp
 // ConcreteCreatorA.h
+
 #ifndef CONCRETE_CREATOR_A_H
 #define CONCRETE_CREATOR_A_H
 
@@ -237,6 +258,7 @@ public:
 ```
 ```cpp
 // ConcreteCreatorA.cpp
+
 #include "ConcreteCreatorA.h"
 #include "ConcreteProductA.h"
 
@@ -246,6 +268,7 @@ Product* ConcreteCreatorA::createProduct() {
 ```
 ```cpp
 // ConcreteCreatorB.h
+
 #ifndef CONCRETE_CREATOR_B_H
 #define CONCRETE_CREATOR_B_H
 
@@ -260,6 +283,7 @@ public:
 ```
 ```cpp
 // ConcreteCreatorB.cpp
+
 #include "ConcreteCreatorB.h"
 #include "ConcreteProductB.h"
 
@@ -269,6 +293,7 @@ Product* ConcreteCreatorB::createProduct() {
 ```
 ```cpp
 // Main.cpp
+
 #include <iostream>
 #include "ConcreteCreatorA.h"
 #include "ConcreteCreatorB.h"
@@ -295,6 +320,7 @@ int main() {
 ### **Python Implementation**
 ```python
 # product.py
+
 from abc import ABC, abstractmethod
 
 class Product(ABC):
@@ -304,6 +330,7 @@ class Product(ABC):
 ```
 ```python
 # concrete_product_a.py
+
 from product import Product
 
 class ConcreteProductA(Product):
@@ -312,6 +339,7 @@ class ConcreteProductA(Product):
 ```
 ```python
 # concrete_product_b.py
+
 from product import Product
 
 class ConcreteProductB(Product):
@@ -320,6 +348,7 @@ class ConcreteProductB(Product):
 ```
 ```python
 # creator.py
+
 from abc import ABC, abstractmethod
 from product import Product
 
@@ -330,6 +359,7 @@ class Creator(ABC):
 ```
 ```python
 # concrete_creator_a.py
+
 from creator import Creator
 from concrete_product_a import ConcreteProductA
 
@@ -339,6 +369,7 @@ class ConcreteCreatorA(Creator):
 ```
 ```python
 # concrete_creator_b.py
+
 from creator import Creator
 from concrete_product_b import ConcreteProductB
 
@@ -348,6 +379,7 @@ class ConcreteCreatorB(Creator):
 ```
 ```python
 # main.py
+
 from concrete_creator_a import ConcreteCreatorA
 from concrete_creator_b import ConcreteCreatorB
 
@@ -364,6 +396,7 @@ if __name__ == "__main__":
 ### **JavaScript Implementation**
 ```javascript
 // product.js
+
 class Product {
   use() {
     throw new Error("Method 'use()' must be implemented.");
@@ -374,6 +407,7 @@ module.exports = Product;
 ```
 ```javascript
 // concreteProductA.js
+
 const Product = require("./product");
 
 class ConcreteProductA extends Product {
@@ -397,6 +431,7 @@ module.exports = ConcreteProductB;
 ```
 ```javascript
 // creator.js
+
 class Creator {
   createProduct() {
     throw new Error("Method 'createProduct()' must be implemented.");
@@ -407,6 +442,7 @@ module.exports = Creator;
 ```
 ```javascript
 // concreteCreatorA.js
+
 const Creator = require("./creator");
 const ConcreteProductA = require("./concreteProductA");
 
@@ -420,6 +456,7 @@ module.exports = ConcreteCreatorA;
 ```
 ```javascript
 // concreteCreatorB.js
+
 const Creator = require("./creator");
 const ConcreteProductB = require("./concreteProductB");
 
@@ -433,6 +470,7 @@ module.exports = ConcreteCreatorB;
 ```
 ```javascript
 // main.js
+
 const ConcreteCreatorA = require("./concreteCreatorA");
 const ConcreteCreatorB = require("./concreteCreatorB");
 

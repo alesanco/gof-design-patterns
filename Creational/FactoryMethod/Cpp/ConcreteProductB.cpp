@@ -1,4 +1,5 @@
 // ConcreteProductB.cpp
+
 #include "ConcreteProductB.h"
 #include <iostream>
 

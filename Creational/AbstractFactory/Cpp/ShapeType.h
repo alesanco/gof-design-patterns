@@ -1,4 +1,5 @@
 // ShapeType.h
+
 #ifndef SHAPE_TYPE_H
 #define SHAPE_TYPE_H
 

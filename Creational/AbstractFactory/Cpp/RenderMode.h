@@ -1,4 +1,5 @@
 // RenderMode.h
+
 #ifndef RENDER_MODE_H
 #define RENDER_MODE_H
 

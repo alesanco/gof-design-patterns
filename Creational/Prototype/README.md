@@ -18,6 +18,7 @@ Each language implements the **Prototype pattern** differently based on its capa
 ### **Java Implementation**
 ```java
 // Shape.java
+
 public abstract class Shape implements Cloneable {
   private String color;
 
@@ -47,6 +48,7 @@ public abstract class Shape implements Cloneable {
 ```
 ```java
 // Circle.java
+
 public class Circle extends Shape {
   private int radius;
 
@@ -78,6 +80,7 @@ public class Circle extends Shape {
 ```
 ```java
 // Square.java
+
 public class Square extends Shape {
   private int sideLength;
 
@@ -109,6 +112,7 @@ public class Square extends Shape {
 ```
 ```java
 // Main.java
+
 public class Main {
   public static void main(String[] args) {
     // Create an original Circle and Square
@@ -141,6 +145,7 @@ public class Main {
 ### **C# Implementation**
 ```csharp
 // Shape.cs
+
 using System;
 
 public abstract class Shape : ICloneable {
@@ -159,6 +164,7 @@ public abstract class Shape : ICloneable {
 ```
 ```csharp
 // Circle.cs
+
 using System;
 
 public class Circle : Shape {
@@ -179,6 +185,7 @@ public class Circle : Shape {
 ```
 ```csharp
 // Square.cs
+
 using System;
 
 public class Square : Shape {
@@ -199,6 +206,7 @@ public class Square : Shape {
 ```
 ```csharp
 // Program.cs
+
 using System;
 
 class Program {
@@ -233,6 +241,7 @@ class Program {
 ### **C++ Implementation**
 ```cpp
 // Shape.h
+
 #ifndef SHAPE_H
 #define SHAPE_H
 
@@ -257,6 +266,7 @@ public:
 ```
 ```cpp
 // Shape.cpp
+
 #include "Shape.h"
 
 Shape::Shape(const std::string& color) : color(color) {}
@@ -271,6 +281,7 @@ std::string Shape::getColor() const {
 ```
 ```cpp
 // Circle.h
+
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
@@ -292,6 +303,7 @@ public:
 ```
 ```cpp
 // Circle.cpp
+
 #include "Circle.h"
 #include <iostream>
 
@@ -315,6 +327,7 @@ Circle* Circle::clone() const {
 ```
 ```cpp
 // Square.h
+
 #ifndef SQUARE_H
 #define SQUARE_H
 
@@ -336,6 +349,7 @@ public:
 ```
 ```cpp
 // Square.cpp
+
 #include "Square.h"
 #include <iostream>
 
@@ -359,6 +373,7 @@ Square* Square::clone() const {
 ```
 ```cpp
 // Main.cpp
+
 #include <iostream>
 #include "Circle.h"
 #include "Square.h"
@@ -401,6 +416,7 @@ int main() {
 ### **Python Implementation**
 ```python
 # shape.py
+
 import copy
 
 class Shape:
@@ -421,6 +437,7 @@ class Shape:
 ```
 ```python
 # circle.py
+
 from shape import Shape
 
 class Circle(Shape):
@@ -439,6 +456,7 @@ class Circle(Shape):
 ```
 ```python
 # square.py
+
 from shape import Shape
 
 class Square(Shape):
@@ -457,6 +475,7 @@ class Square(Shape):
 ```
 ```python
 # main.py
+
 from circle import Circle
 from square import Square
 
@@ -489,6 +508,7 @@ if __name__ == "__main__":
 ### **JavaScript Implementation**
 ```javascript
 // shape.js
+
 class Shape {
   constructor(color) {
     this.color = color;
@@ -515,6 +535,7 @@ module.exports = Shape;
 ```
 ```javascript
 // circle.js
+
 const Shape = require("./shape");
 
 class Circle extends Shape {
@@ -540,6 +561,7 @@ module.exports = Circle;
 ```
 ```javascript
 // square.js
+
 const Shape = require("./shape");
 
 class Square extends Shape {
@@ -565,6 +587,7 @@ module.exports = Square;
 ```
 ```javascript
 // main.js
+
 const Circle = require("./circle");
 const Square = require("./square");
 

@@ -25,6 +25,7 @@ Each language implements the **Abstract Factory pattern** differently based on i
 ### **Java Implementation**
 ```java
 // RenderMode.java
+
 public enum RenderMode {
   TWO_D,
   THREE_D
@@ -32,6 +33,7 @@ public enum RenderMode {
 ```
 ```java
 // ShapeType.java
+
 public enum ShapeType {
   CIRCLE,
   SQUARE
@@ -39,18 +41,21 @@ public enum ShapeType {
 ```
 ```java
 // Shape.java
+
 public interface Shape {
   void draw();
 }
 ```
 ```java
 // Renderer.java
+
 public interface Renderer {
   void render();
 }
 ```
 ```java
 // Circle.java
+
 public class Circle implements Shape {
   @Override
   public void draw() {
@@ -60,6 +65,7 @@ public class Circle implements Shape {
 ```
 ```java
 // Square.java
+
 public class Square implements Shape {
   @Override
   public void draw() {
@@ -69,6 +75,7 @@ public class Square implements Shape {
 ```
 ```java
 // TwoDRenderer.java
+
 public class TwoDRenderer implements Renderer {
   @Override
   public void render() {
@@ -78,6 +85,7 @@ public class TwoDRenderer implements Renderer {
 ```
 ```java
 // ThreeDRenderer.java
+
 public class ThreeDRenderer implements Renderer {
   @Override
   public void render() {
@@ -87,6 +95,7 @@ public class ThreeDRenderer implements Renderer {
 ```
 ```java
 // ShapeFactory.java
+
 public interface ShapeFactory {
   Shape createShape(ShapeType type);
   Renderer createRenderer();
@@ -94,6 +103,7 @@ public interface ShapeFactory {
 ```
 ```java
 // TwoDShapeFactory.java
+
 public class TwoDShapeFactory implements ShapeFactory {
   @Override
   public Shape createShape(ShapeType type) {
@@ -115,6 +125,7 @@ public class TwoDShapeFactory implements ShapeFactory {
 ```
 ```java
 // ThreeDShapeFactory.java
+
 public class ThreeDShapeFactory implements ShapeFactory {
   @Override
   public Shape createShape(ShapeType type) {
@@ -136,6 +147,7 @@ public class ThreeDShapeFactory implements ShapeFactory {
 ```
 ```java
 // Main.java
+
 public class Main {
   public static void main(String[] args) {
     // Loop through rendering modes
@@ -173,6 +185,7 @@ public class Main {
 ### **C# Implementation**
 ```csharp
 // RenderMode.cs
+
 public enum RenderMode {
   TWO_D,
   THREE_D
@@ -180,6 +193,7 @@ public enum RenderMode {
 ```
 ```csharp
 // ShapeType.cs
+
 public enum ShapeType {
   CIRCLE,
   SQUARE
@@ -187,18 +201,21 @@ public enum ShapeType {
 ```
 ```csharp
 // IShape.cs
+
 public interface IShape {
   void Draw();
 }
 ```
 ```csharp
 // IRenderer.cs
+
 public interface IRenderer {
   void Render();
 }
 ```
 ```csharp
 // Circle.cs
+
 using System;
 
 public class Circle : IShape {
@@ -209,6 +226,7 @@ public class Circle : IShape {
 ```
 ```csharp
 // Square.cs
+
 using System;
 
 public class Square : IShape {
@@ -219,6 +237,7 @@ public class Square : IShape {
 ```
 ```csharp
 // TwoDRenderer.cs
+
 using System;
 
 public class TwoDRenderer : IRenderer {
@@ -229,6 +248,7 @@ public class TwoDRenderer : IRenderer {
 ```
 ```csharp
 // ThreeDRenderer.cs
+
 using System;
 
 public class ThreeDRenderer : IRenderer {
@@ -239,6 +259,7 @@ public class ThreeDRenderer : IRenderer {
 ```
 ```csharp
 // IShapeFactory.cs
+
 public interface IShapeFactory {
   IShape CreateShape(ShapeType type);
   IRenderer CreateRenderer();
@@ -246,6 +267,7 @@ public interface IShapeFactory {
 ```
 ```csharp
 // TwoDShapeFactory.cs
+
 using System;
 
 public class TwoDShapeFactory : IShapeFactory {
@@ -264,6 +286,7 @@ public class TwoDShapeFactory : IShapeFactory {
 ```
 ```csharp
 // ThreeDShapeFactory.cs
+
 using System;
 
 public class ThreeDShapeFactory : IShapeFactory {
@@ -282,6 +305,7 @@ public class ThreeDShapeFactory : IShapeFactory {
 ```
 ```csharp
 // Program.cs
+
 using System;
 
 class Program {
@@ -313,6 +337,7 @@ class Program {
 ### **C++ Implementation**
 ```cpp
 // RenderMode.h
+
 #ifndef RENDER_MODE_H
 #define RENDER_MODE_H
 
@@ -325,6 +350,7 @@ enum class RenderMode {
 ```
 ```cpp
 // ShapeType.h
+
 #ifndef SHAPE_TYPE_H
 #define SHAPE_TYPE_H
 
@@ -337,6 +363,7 @@ enum class ShapeType {
 ```
 ```cpp
 // IShape.h
+
 #ifndef I_SHAPE_H
 #define I_SHAPE_H
 
@@ -350,6 +377,7 @@ public:
 ```
 ```cpp
 // IRenderer.h
+
 #ifndef I_RENDERER_H
 #define I_RENDERER_H
 
@@ -364,6 +392,7 @@ public:
 ```
 ```cpp
 // Circle.h
+
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
@@ -378,6 +407,7 @@ public:
 ```
 ```cpp
 // Circle.cpp
+
 #include "Circle.h"
 #include <iostream>
 
@@ -387,6 +417,7 @@ void Circle::draw() {
 ```
 ```cpp
 // Square.h
+
 #ifndef SQUARE_H
 #define SQUARE_H
 
@@ -401,6 +432,7 @@ public:
 ```
 ```cpp
 // Square.cpp
+
 #include "Square.h"
 #include <iostream>
 
@@ -410,6 +442,7 @@ void Square::draw() {
 ```
 ```cpp
 // TwoDRenderer.h
+
 #ifndef TWO_D_RENDERER_H
 #define TWO_D_RENDERER_H
 
@@ -424,6 +457,7 @@ public:
 ```
 ```cpp
 // TwoDRenderer.cpp
+
 #include "TwoDRenderer.h"
 #include <iostream>
 
@@ -433,6 +467,7 @@ void TwoDRenderer::render() {
 ```
 ```cpp
 // ThreeDRenderer.h
+
 #ifndef THREE_D_RENDERER_H
 #define THREE_D_RENDERER_H
 
@@ -447,6 +482,7 @@ public:
 ```
 ```cpp
 // ThreeDRenderer.cpp
+
 #include "ThreeDRenderer.h"
 #include <iostream>
 
@@ -456,6 +492,7 @@ void ThreeDRenderer::render() {
 ```
 ```cpp
 // IShapeFactory.h
+
 #ifndef I_SHAPE_FACTORY_H
 #define I_SHAPE_FACTORY_H
 
@@ -474,6 +511,7 @@ public:
 ```
 ```cpp
 // TwoDShapeFactory.h
+
 #ifndef TWO_D_SHAPE_FACTORY_H
 #define TWO_D_SHAPE_FACTORY_H
 
@@ -489,6 +527,7 @@ public:
 ```
 ```cpp
 // TwoDShapeFactory.cpp
+
 #include "TwoDShapeFactory.h"
 #include "Circle.h"
 #include "Square.h"
@@ -512,6 +551,7 @@ IRenderer* TwoDShapeFactory::createRenderer() {
 ```
 ```cpp
 // ThreeDShapeFactory.h
+
 #ifndef THREE_D_SHAPE_FACTORY_H
 #define THREE_D_SHAPE_FACTORY_H
 
@@ -527,6 +567,7 @@ public:
 ```
 ```cpp
 // ThreeDShapeFactory.cpp
+
 #include "ThreeDShapeFactory.h"
 #include "Circle.h"
 #include "Square.h"
@@ -549,6 +590,8 @@ IRenderer* ThreeDShapeFactory::createRenderer() {
 }
 ```
 ```cpp
+// Main.cpp
+
 #include <iostream>
 #include "RenderMode.h"
 #include "ShapeType.h"
@@ -595,6 +638,7 @@ int main() {
 ### **Python Implementation**
 ```python
 # render_mode.py
+
 from enum import Enum
 
 class RenderMode(Enum):
@@ -603,6 +647,7 @@ class RenderMode(Enum):
 ```
 ```python
 # shape_type.py
+
 from enum import Enum
 
 class ShapeType(Enum):
@@ -611,6 +656,7 @@ class ShapeType(Enum):
 ```
 ```python
 # shape.py
+
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -620,6 +666,7 @@ class Shape(ABC):
 ```
 ```python
 # renderer.py
+
 from abc import ABC, abstractmethod
 
 class Renderer(ABC):
@@ -629,6 +676,7 @@ class Renderer(ABC):
 ```
 ```python
 # circle.py
+
 from shape import Shape
 
 class Circle(Shape):
@@ -637,6 +685,7 @@ class Circle(Shape):
 ```
 ```python
 # square.py
+
 from shape import Shape
 
 class Square(Shape):
@@ -645,6 +694,7 @@ class Square(Shape):
 ```
 ```python
 # two_d_renderer.py
+
 from renderer import Renderer
 
 class TwoDRenderer(Renderer):
@@ -653,6 +703,7 @@ class TwoDRenderer(Renderer):
 ```
 ```python
 # three_d_renderer.py
+
 from renderer import Renderer
 
 class ThreeDRenderer(Renderer):
@@ -661,6 +712,7 @@ class ThreeDRenderer(Renderer):
 ```
 ```python
 # shape_factory.py
+
 from abc import ABC, abstractmethod
 from shape_type import ShapeType
 from shape import Shape
@@ -677,6 +729,7 @@ class ShapeFactory(ABC):
 ```
 ```python
 # two_d_shape_factory.py
+
 from shape_factory import ShapeFactory
 from shape_type import ShapeType
 from circle import Circle
@@ -698,6 +751,7 @@ class TwoDShapeFactory(ShapeFactory):
 ```
 ```python
 # three_d_shape_factory.py
+
 from shape_factory import ShapeFactory
 from shape_type import ShapeType
 from circle import Circle
@@ -719,6 +773,7 @@ class ThreeDShapeFactory(ShapeFactory):
 ```
 ```python
 # main.py
+
 from render_mode import RenderMode
 from shape_type import ShapeType
 from two_d_shape_factory import TwoDShapeFactory
@@ -747,6 +802,7 @@ if __name__ == "__main__":
 ### **JavaScript Implementation**
 ```javascript
 // renderMode.js
+
 const RenderMode = Object.freeze({
   TWO_D: "TWO_D",
   THREE_D: "THREE_D"
@@ -756,6 +812,7 @@ module.exports = RenderMode;
 ```
 ```javascript
 // shapeType.js
+
 const ShapeType = Object.freeze({
   CIRCLE: "CIRCLE",
   SQUARE: "SQUARE"
@@ -765,6 +822,7 @@ module.exports = ShapeType;
 ```
 ```javascript
 // shape.js
+
 class Shape {
   draw() {
     throw new Error("Method 'draw()' must be implemented.");
@@ -775,6 +833,7 @@ module.exports = Shape;
 ```
 ```javascript
 // renderer.js
+
 class Renderer {
   render() {
     throw new Error("Method 'render()' must be implemented.");
@@ -785,6 +844,7 @@ module.exports = Renderer;
 ```
 ```javascript
 // circle.js
+
 const Shape = require("./shape");
 
 class Circle extends Shape {
@@ -797,6 +857,7 @@ module.exports = Circle;
 ```
 ```javascript
 // square.js
+
 const Shape = require("./shape");
 
 class Square extends Shape {
@@ -809,6 +870,7 @@ module.exports = Square;
 ```
 ```javascript
 // twoDRenderer.js
+
 const Renderer = require("./renderer");
 
 class TwoDRenderer extends Renderer {
@@ -821,6 +883,7 @@ module.exports = TwoDRenderer;
 ```
 ```javascript
 // threeDRenderer.js
+
 const Renderer = require("./renderer");
 
 class ThreeDRenderer extends Renderer {
@@ -833,6 +896,7 @@ module.exports = ThreeDRenderer;
 ```
 ```javascript
 // shapeFactory.js
+
 class ShapeFactory {
   createShape(shapeType) {
     throw new Error("Method 'createShape()' must be implemented.");
@@ -847,6 +911,7 @@ module.exports = ShapeFactory;
 ```
 ```javascript
 // twoDShapeFactory.js
+
 const ShapeFactory = require("./shapeFactory");
 const ShapeType = require("./shapeType");
 const Circle = require("./circle");
@@ -874,6 +939,7 @@ module.exports = TwoDShapeFactory;
 ```
 ```javascript
 // threeDShapeFactory.js
+
 const ShapeFactory = require("./shapeFactory");
 const ShapeType = require("./shapeType");
 const Circle = require("./circle");
@@ -901,6 +967,7 @@ module.exports = ThreeDShapeFactory;
 ```
 ```javascript
 // main.js
+
 const RenderMode = require("./renderMode");
 const ShapeType = require("./shapeType");
 const TwoDShapeFactory = require("./twoDShapeFactory");

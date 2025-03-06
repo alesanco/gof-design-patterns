@@ -1,4 +1,5 @@
 // shapeFactory.js
+
 class ShapeFactory {
   createShape(shapeType) {
     throw new Error("Method 'createShape()' must be implemented.");

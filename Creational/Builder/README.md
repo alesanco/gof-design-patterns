@@ -25,6 +25,7 @@ Each language implements the **Builder pattern** differently based on its capabi
 ### **Java Implementation**
 ```java
 // Car.java
+
 public class Car {
   private final String engine;
   private final boolean hasGPS;
@@ -81,6 +82,7 @@ public class Car {
 ```
 ```java
 // CarDirector.java
+
 public class CarDirector {
   public Car buildLuxuryCar() {
     return new Car.CarBuilder()
@@ -103,6 +105,7 @@ public class CarDirector {
 ```
 ```java
 // Main.java
+
 public class Main {
   public static void main(String[] args) {
     CarDirector director = new CarDirector();
@@ -123,6 +126,7 @@ public class Main {
 ### **C# Implementation**
 ```csharp
 // Car.cs
+
 using System;
 
 public class Car {
@@ -181,6 +185,7 @@ public class Car {
 ```
 ```csharp
 // CarDirector.cs
+
 public class CarDirector {
   public Car BuildLuxuryCar() {
     return new Car.CarBuilder()
@@ -203,6 +208,7 @@ public class CarDirector {
 ```
 ```csharp
 // Program.cs
+
 using System;
 
 class Program {
@@ -225,6 +231,7 @@ class Program {
 ### **C++ Implementation**
 ```cpp
 // Car.h
+
 #ifndef CAR_H
 #define CAR_H
 
@@ -246,6 +253,7 @@ public:
 ```
 ```cpp
 // Car.cpp
+
 #include "Car.h"
 #include <iostream>
 
@@ -262,6 +270,7 @@ void Car::showSpecifications() {
 ```
 ```cpp
 // ICarBuilder.h
+
 #ifndef I_CAR_BUILDER_H
 #define I_CAR_BUILDER_H
 
@@ -281,6 +290,7 @@ public:
 ```
 ```cpp
 // CarBuilder.h
+
 #ifndef CAR_BUILDER_H
 #define CAR_BUILDER_H
 
@@ -305,6 +315,7 @@ public:
 ```
 ```cpp
 // CarBuilder.cpp
+
 #include "CarBuilder.h"
 
 ICarBuilder* CarBuilder::setEngine(const std::string& engine) {
@@ -333,6 +344,7 @@ Car* CarBuilder::build() {
 ```
 ```cpp
 // CarDirector.h
+
 #ifndef CAR_DIRECTOR_H
 #define CAR_DIRECTOR_H
 
@@ -348,6 +360,7 @@ public:
 ```
 ```cpp
 // CarDirector.cpp
+
 #include "CarDirector.h"
 
 Car* CarDirector::buildLuxuryCar() {
@@ -370,6 +383,7 @@ Car* CarDirector::buildEconomyCar() {
 ```
 ```cpp
 // Main.cpp
+
 #include <iostream>
 #include "CarDirector.h"
 
@@ -397,6 +411,7 @@ int main() {
 ### **Python Implementation**
 ```python
 # car.py
+
 class Car:
   def __init__(self, engine, has_gps, has_sunroof, seats):
     self.engine = engine
@@ -413,6 +428,7 @@ class Car:
 ```
 ```python
 # car_builder.py
+
 from car import Car
 
 class CarBuilder:
@@ -443,6 +459,7 @@ class CarBuilder:
 ```
 ```python
 # car_director.py
+
 from car_builder import CarBuilder
 
 class CarDirector:
@@ -464,6 +481,7 @@ class CarDirector:
 ```
 ```python
 # main.py
+
 from car_director import CarDirector
 
 if __name__ == "__main__":
@@ -483,6 +501,7 @@ if __name__ == "__main__":
 ### **JavaScript Implementation**
 ```javascript
 // car.js
+
 class Car {
   constructor(engine, hasGPS, hasSunroof, seats) {
     this.engine = engine;
@@ -504,6 +523,7 @@ module.exports = Car;
 ```
 ```javascript
 // carBuilder.js
+
 const Car = require("./car");
 
 class CarBuilder {
@@ -543,6 +563,7 @@ module.exports = CarBuilder;
 ```
 ```javascript
 // carDirector.js
+
 const CarBuilder = require("./carBuilder");
 
 class CarDirector {
@@ -569,8 +590,8 @@ module.exports = CarDirector;
 ```
 ```javascript
 // main.js
-const CarDirector = require("./carDirector");
 
+const CarDirector = require("./carDirector");
 const director = new CarDirector();
 
 // Build a Luxury Car

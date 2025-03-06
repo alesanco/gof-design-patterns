@@ -1,4 +1,5 @@
 // Shape.java
+
 public abstract class Shape implements Cloneable {
   private String color;
 

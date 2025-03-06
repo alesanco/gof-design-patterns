@@ -1,4 +1,5 @@
 // twoDRenderer.js
+
 const Renderer = require("./renderer");
 
 class TwoDRenderer extends Renderer {

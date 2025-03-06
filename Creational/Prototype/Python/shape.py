@@ -1,4 +1,5 @@
 # shape.py
+
 import copy
 
 class Shape:

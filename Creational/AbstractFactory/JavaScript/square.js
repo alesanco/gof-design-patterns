@@ -1,4 +1,5 @@
 // square.js
+
 const Shape = require("./shape");
 
 class Square extends Shape {

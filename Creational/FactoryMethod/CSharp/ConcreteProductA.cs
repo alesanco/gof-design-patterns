@@ -1,4 +1,5 @@
 // ConcreteProductA.cs
+
 using System;
 
 public class ConcreteProductA : IProduct {

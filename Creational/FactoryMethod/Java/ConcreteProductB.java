@@ -1,4 +1,5 @@
 // ConcreteProductB.java
+
 public class ConcreteProductB implements Product {
   @Override
   public void use() {

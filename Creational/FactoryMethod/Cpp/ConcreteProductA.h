@@ -1,4 +1,5 @@
 // ConcreteProductA.h
+
 #ifndef CONCRETE_PRODUCT_A_H
 #define CONCRETE_PRODUCT_A_H
 

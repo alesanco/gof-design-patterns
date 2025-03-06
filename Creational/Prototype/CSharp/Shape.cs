@@ -1,4 +1,5 @@
 // Shape.cs
+
 using System;
 
 public abstract class Shape : ICloneable {

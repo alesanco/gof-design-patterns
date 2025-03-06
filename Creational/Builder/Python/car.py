@@ -1,4 +1,5 @@
 # car.py
+
 class Car:
   def __init__(self, engine, has_gps, has_sunroof, seats):
     self.engine = engine
