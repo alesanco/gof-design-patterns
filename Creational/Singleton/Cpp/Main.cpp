@@ -1,15 +1,16 @@
 // Main.cpp
-#include <iostream>
-#include "Singleton.h"
+
+#include "Logger.h"
 
 int main() {
-  Singleton* s1 = Singleton::GetInstance();
-  Singleton* s2 = Singleton::GetInstance();
+  Logger* logger1 = Logger::getInstance();
+  logger1->log("Initializing the system...");
 
-  std::cout << (s1 == s2) << std::endl; // Should print: 1 (true)
+  Logger* logger2 = Logger::getInstance();
+  logger2->log("System running.");
 
-  // Cleanup memory
-  Singleton::DestroyInstance();
+  // Verify if both instances are the same
+  std::cout << "Logger instances are the same: " << (logger1 == logger2) << std::endl;
 
   return 0;
 }

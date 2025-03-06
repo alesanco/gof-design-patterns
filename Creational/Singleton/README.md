@@ -17,60 +17,89 @@ Each language implements the **Singleton pattern** differently based on its capa
 
 ### **Java Implementation**
 ```java
-// Singleton.java
-public class Singleton {
-  private static Singleton instance;
+// Logger.java
 
-  private Singleton() {} // Private constructor
+public class Logger {
+  private static Logger instance;
 
-  public static Singleton getInstance() {
+  private Logger() {
+    System.out.println("Logger instance created.");
+  }
+
+  public static Logger getInstance() {
     if (instance == null) {
-      instance = new Singleton();
+      instance = new Logger();
     }
-
     return instance;
+  }
+
+  public void log(String message) {
+    System.out.println("[LOG]: " + message);
   }
 }
 ```
 ```java
 // Main.java
+
 public class Main {
   public static void main(String[] args) {
-    Singleton s1 = Singleton.getInstance();
-    Singleton s2 = Singleton.getInstance();
+    Logger logger1 = Logger.getInstance();
+    logger1.log("Initializing the system...");
 
-    System.out.println(s1 == s2); // Should print: true
+    Logger logger2 = Logger.getInstance();
+    logger2.log("System running.");
+
+    // Verify if both instances are the same
+    System.out.println("Logger instances are the same: " + (logger1 == logger2));
   }
 }
 ```
 
 ### **C# Implementation**
 ```csharp
-// Singleton.cs
-public class Singleton {
-  private static Singleton? instance = null;
-  
-  private Singleton() {} // Private constructor
+// Logger.cs
 
-  public static Singleton GetInstance() {
-    if (instance == null) {
-      instance = new Singleton();
+using System;
+
+public sealed class Logger {
+  private static Logger? instance;
+  private static readonly object lockObject = new();
+
+  private Logger() {
+    Console.WriteLine("Logger instance created.");
+  }
+
+  public static Logger Instance {
+    get {
+      lock (lockObject) {
+        if (instance == null) {
+          instance = new Logger();
+        }
+        return instance;
+      }
     }
+  }
 
-    return instance;
+  public void Log(string message) {
+    Console.WriteLine($"[LOG]: {message}");
   }
 }
 ```
 ```csharp
 // Program.cs
+
 using System;
 
 class Program {
   static void Main() {
-    Singleton s1 = Singleton.GetInstance();
-    Singleton s2 = Singleton.GetInstance();
+    Logger logger1 = Logger.Instance;
+    logger1.Log("Initializing the system...");
 
-    Console.WriteLine(s1 == s2); // Should print: True
+    Logger logger2 = Logger.Instance;
+    logger2.Log("System running.");
+
+    // Verify if both instances are the same
+    Console.WriteLine($"Logger instances are the same: {logger1 == logger2}");
   }
 }
 ```
@@ -98,37 +127,71 @@ public:
 #endif // SINGLETON_H
 ```
 ```cpp
-// Singleton.cpp
-#include "Singleton.h"
+// Logger.h
 
-Singleton* Singleton::instance = nullptr;
+#ifndef LOGGER_H
+#define LOGGER_H
 
-Singleton* Singleton::GetInstance() {
-  if (instance == nullptr) {
-    instance = new Singleton();
-  }
+#include <iostream>
+#include <memory>
+#include <mutex>
 
-  return instance;
+class Logger {
+private:
+  static std::unique_ptr<Logger> instance;
+  static std::mutex mutex;
+
+  Logger(); // Private constructor to prevent direct instantiation
+
+public:
+  static Logger* getInstance();
+  void log(const std::string& message);
+
+  // Delete copy constructor and assignment operator
+  Logger(const Logger&) = delete;
+  Logger& operator=(const Logger&) = delete;
+};
+
+#endif // LOGGER_H
+```
+```cpp
+// Logger.cpp
+
+#include "Logger.h"
+
+std::unique_ptr<Logger> Logger::instance;
+std::mutex Logger::mutex;
+
+Logger::Logger() {
+  std::cout << "Logger instance created." << std::endl;
 }
 
-void Singleton::DestroyInstance() {
-  delete instance;
-  instance = nullptr;
+Logger* Logger::getInstance() {
+  std::lock_guard<std::mutex> lock(mutex);
+  if (!instance) {
+    instance = std::unique_ptr<Logger>(new Logger());
+  }
+  return instance.get();
+}
+
+void Logger::log(const std::string& message) {
+  std::cout << "[LOG]: " << message << std::endl;
 }
 ```
 ```cpp
 // Main.cpp
-#include <iostream>
-#include "Singleton.h"
+
+#include "Logger.h"
 
 int main() {
-  Singleton* s1 = Singleton::GetInstance();
-  Singleton* s2 = Singleton::GetInstance();
+  Logger* logger1 = Logger::getInstance();
+  logger1->log("Initializing the system...");
 
-  std::cout << (s1 == s2) << std::endl; // Should print: 1 (true)
+  Logger* logger2 = Logger::getInstance();
+  logger2->log("System running.");
 
-  // Cleanup memory
-  Singleton::DestroyInstance();
+  // Verify if both instances are the same
+  std::cout << "Logger instances are the same: " << (logger1 == logger2) << std::endl;
 
   return 0;
 }
@@ -136,49 +199,74 @@ int main() {
 
 ### **Python Implementation**
 ```python
-# singleton.py
-class Singleton:
+# logger.py
+
+import threading
+
+class Logger:
   _instance = None
+  _lock = threading.Lock()  # Ensures thread safety
 
   def __new__(cls):
-    if cls._instance is None:
-      cls._instance = super(Singleton, cls).__new__(cls)
+    with cls._lock:  # Thread-safe singleton
+      if cls._instance is None:
+        cls._instance = super(Logger, cls).__new__(cls)
+        print("Logger instance created.")
+      return cls._instance
 
-    return cls._instance
+  def log(self, message: str):
+    print(f"[LOG]: {message}")
 ```
 ```python
 # main.py
-from singleton import Singleton
 
-s1 = Singleton()
-s2 = Singleton()
+from logger import Logger
 
-print(s1 is s2)  # Should print: True
+if __name__ == "__main__":
+  logger1 = Logger()
+  logger1.log("Initializing the system...")
+
+  logger2 = Logger()
+  logger2.log("System running.")
+
+  # Verify if both instances are the same
+  print(f"Logger instances are the same: {logger1 is logger2}")
 ```
 
 ### **JavaScript Implementation**
 ```javascript
-// singleton.js
-class Singleton {
-  constructor() {
-    if (!Singleton.instance) {
-      Singleton.instance = this;
-    }
+// logger.js
 
-    return Singleton.instance;
+class Logger {
+  static instance = null;
+
+  constructor() {
+    if (Logger.instance) {
+      return Logger.instance;
+    }
+    Logger.instance = this;
+    console.log("Logger instance created.");
+  }
+
+  log(message) {
+    console.log(`[LOG]: ${message}`);
   }
 }
 
-module.exports = Singleton;
+module.exports = new Logger();
 ```
 ```javascript
 // main.js
-const Singleton = require("./singleton");
 
-const s1 = new Singleton();
-const s2 = new Singleton();
+const logger1 = require("./logger");
 
-console.log(s1 === s2); // Should print: true
+logger1.log("Initializing the system...");
+
+const logger2 = require("./logger");
+logger2.log("System running.");
+
+// Verify if both instances are the same
+console.log(`Logger instances are the same: ${logger1 === logger2}`);
 ```
 
 ## 📌 Running the Code

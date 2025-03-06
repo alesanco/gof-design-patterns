@@ -1,7 +1,11 @@
 // main.js
-const Singleton = require("./singleton");
 
-const s1 = new Singleton();
-const s2 = new Singleton();
+const logger1 = require("./logger");
 
-console.log(s1 === s2); // Should print: true
+logger1.log("Initializing the system...");
+
+const logger2 = require("./logger");
+logger2.log("System running.");
+
+// Verify if both instances are the same
+console.log(`Logger instances are the same: ${logger1 === logger2}`);

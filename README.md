@@ -33,22 +33,22 @@ This balance of **static** (**Java**, **C#**, **C++**) and **dynamic** (**Python
 │   ├── ...
 │   └── Singleton
 │       ├── Cpp
-│       │   ├── Main.cpp
-│       │   ├── Singleton.cpp
-│       │   └── Singleton.h
+│       │   ├── Logger.cpp
+│       │   ├── Logger.h
+│       │   └── Main.cpp
 │       ├── CSharp
+│       │   ├── Logger.cs
 │       │   ├── Program.cs
-│       │   ├── Singleton.cs
 │       │   └── SingletonApp.csproj
 │       ├── Java
-│       │   ├── Main.java
-│       │   └── Singleton.java
+│       │   ├── Logger.java
+│       │   └── Main.java
 │       ├── JavaScript
-│       │   ├── main.js
-│       │   └── singleton.js
+│       │   ├── logger.js
+│       │   └── main.js
 │       ├── Python
-│       │   ├── main.py
-│       │   └── singleton.py
+│       │   ├── logger.py
+│       │   └── main.py
 │       └── README.md
 ├── Structural
 │   └── ...

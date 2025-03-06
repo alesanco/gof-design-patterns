@@ -1,11 +1,16 @@
 ﻿// Program.cs
+
 using System;
 
 class Program {
   static void Main() {
-    Singleton s1 = Singleton.GetInstance();
-    Singleton s2 = Singleton.GetInstance();
+    Logger logger1 = Logger.Instance;
+    logger1.Log("Initializing the system...");
 
-    Console.WriteLine(s1 == s2); // Should print: True
+    Logger logger2 = Logger.Instance;
+    logger2.Log("System running.");
+
+    // Verify if both instances are the same
+    Console.WriteLine($"Logger instances are the same: {logger1 == logger2}");
   }
 }
