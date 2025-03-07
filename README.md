@@ -81,11 +81,11 @@ The **naming convention** follows the following rules:
 ### **Creational Patterns (5)**
 | Pattern | Description |
 |---------|------------|
-| **Singleton** | Ensures only one instance of a class exists. |
-| **Factory Method** | Provides an interface for creating objects but lets subclasses alter the type. |
 | **Abstract Factory** | A factory that creates families of related objects. |
 | **Builder** | Separates object construction from representation. |
+| **Factory Method** | Provides an interface for creating objects but lets subclasses alter the type. |
 | **Prototype** | Creates objects by copying an existing instance. |
+| **Singleton** | Ensures only one instance of a class exists. |
 
 ### **Structural Patterns (7)**
 | Pattern | Description |

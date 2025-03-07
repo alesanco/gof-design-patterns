@@ -3,7 +3,7 @@
 ## 📌 What is the Facade Pattern?
 The **Facade Pattern** is a structural design pattern that provides a **simplified interface** to a **complex system of classes, libraries, or APIs**. It helps in **hiding complexities** and **providing a unified, high-level interface**.
 
-## 📌 When to use Facade
+## 📌 When to Use Facade
 Use the **Facade pattern** when:
 - You want to **simplify interactions** with a complex system.
 - Multiple subsystems have **intricate dependencies**, and you need a single entry point to manage them.
