@@ -3,10 +3,11 @@
 ## 📌 What is the Decorator Pattern?
 The **Decorator Pattern** is a structural design pattern that allows adding **new behaviors to objects dynamically** without modifying their existing structure. It uses **composition instead of inheritance**, enabling greater flexibility in extending functionality.
 
-## 📌 When to use Decorator
-- When you want to **add responsibilities dynamically** to objects **at runtime**.
-- When extending a class via **subclassing is impractical** or would lead to an excessive number of subclasses.
-- When you need a **flexible alternative to subclassing** for extending functionality.
+## 📌 When to Use Decorator
+Use the **Decorator pattern** when:
+- You want to **add responsibilities dynamically** to objects **at runtime**.
+- Extending a class via **subclassing is impractical** or would lead to an excessive number of subclasses.
+- You need a **flexible alternative to subclassing** for extending functionality.
 
 ## 📌 Example: Coffee Customization System
 Imagine a **coffee ordering system** where customers can **customize their coffee** with additional ingredients like **milk, sugar, or caramel**. Instead of modifying the base `Coffee` class for each variation, we use **decorators** to dynamically add these features.
@@ -568,7 +569,7 @@ console.log(`${sugarMilkCoffee.getDescription()} -> $${sugarMilkCoffee.getCost()
 ```
 
 ## 📌 Running the Code
-Each implementation is located in its respective language folder:
+Each language implements the **Decorator pattern** differently based on its capabilities.
 
 ### Java
 ```sh
