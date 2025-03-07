@@ -569,7 +569,7 @@ console.log(`${sugarMilkCoffee.getDescription()} -> $${sugarMilkCoffee.getCost()
 ```
 
 ## 📌 Running the Code
-Each language implements the **Decorator pattern** differently based on its capabilities.
+To test the **Decorator pattern**, run the following commands:
 
 ### Java
 ```sh
@@ -588,8 +588,8 @@ dotnet run
 ### C++
 ```sh
 cd Structural/Decorator/Cpp
-g++ Main.cpp SimpleCoffee.cpp CoffeeDecorator.cpp MilkDecorator.cpp SugarDecorator.cpp -o decorator_pattern
-./decorator_pattern
+g++ *.cpp -o decorator
+./decorator
 ```
 
 ### Python
