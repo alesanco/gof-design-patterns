@@ -3,7 +3,6 @@
 from file_system_component import FileSystemComponent
 
 class Folder(FileSystemComponent):
-  
   def __init__(self, name):
     self.name = name
     self.components = []
