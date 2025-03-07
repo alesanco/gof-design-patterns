@@ -571,34 +571,34 @@ console.log(`${sugarMilkCoffee.getDescription()} -> $${sugarMilkCoffee.getCost()
 ## 📌 Running the Code
 To test the **Decorator pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Decorator/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Decorator/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Decorator/Cpp
 g++ *.cpp -o decorator
 ./decorator
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Decorator/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Decorator/JavaScript
 node main.js

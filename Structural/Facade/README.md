@@ -711,34 +711,34 @@ homeTheater.endMovie();
 ## 📌 Running the Code
 To test the **Facade pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Facade/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Facade/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Facade/Cpp
 g++ *.cpp -o facade
 ./facade
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Facade/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Facade/JavaScript
 node main.js

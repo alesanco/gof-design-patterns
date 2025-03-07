@@ -537,34 +537,34 @@ remote.pressButton(); // The light is OFF.
 ## 📌 Running the Code
 To test the **Command pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Behavioral/Command/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Behavioral/Command/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Behavioral/Command/Cpp
 g++ *.cpp -o command
 ./command
 ```
 
-### Python
+### **Python**
 ```sh
 cd Behavioral/Command/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Behavioral/Command/JavaScript
 node main.js

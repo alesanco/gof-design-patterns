@@ -360,34 +360,34 @@ main();
 ## 📌 Running the Code
 To test the **Proxy pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Proxy/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Proxy/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Proxy/Cpp
 g++ *.cpp -o proxy -pthread
 ./proxy
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Proxy/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Proxy/JavaScript
 node main.js

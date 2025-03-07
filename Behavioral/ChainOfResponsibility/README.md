@@ -501,34 +501,34 @@ basic.handleRequest("Unknown Issue");
 ## 📌 Running the Code
 To test the **Chain of Responsibility pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Behavioral/ChainOfResponsibility/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Behavioral/ChainOfResponsibility/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Behavioral/ChainOfResponsibility/Cpp
 g++ *.cpp -o chain_of_responsibility
 ./chain_of_responsibility
 ```
 
-### Python
+### **Python**
 ```sh
 cd Behavioral/ChainOfResponsibility/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Behavioral/ChainOfResponsibility/JavaScript
 node main.js

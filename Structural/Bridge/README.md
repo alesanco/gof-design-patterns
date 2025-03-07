@@ -907,34 +907,34 @@ advancedRemote.mute();
 ## 📌 Running the Code
 To test the **Bridge pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Bridge/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Bridge/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Bridge/Cpp
 g++ *.cpp -o bridge
 ./bridge
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Bridge/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Bridge/JavaScript
 node main.js

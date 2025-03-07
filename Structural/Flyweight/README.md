@@ -441,34 +441,34 @@ editor.displayCharacters();
 ## 📌 Running the Code
 To test the **Flyweight pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Flyweight/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Flyweight/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Flyweight/Cpp
 g++ *.cpp -o flyweight
 ./flyweight
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Flyweight/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Flyweight/JavaScript
 node main.js

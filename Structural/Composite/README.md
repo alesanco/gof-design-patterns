@@ -422,34 +422,34 @@ folder2.showDetails();
 ## 📌 Running the Code
 To test the **Composite pattern**, run the following commands:
 
-### Java
+### **Java**
 ```sh
 cd Structural/Composite/Java
 javac *.java
 java Main
 ```
 
-### C#
+### **C#**
 ```sh
 cd Structural/Composite/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+### **C++**
 ```sh
 cd Structural/Composite/Cpp
 g++ *.cpp -o composite
 ./composite
 ```
 
-### Python
+### **Python**
 ```sh
 cd Structural/Composite/Python
 python3 main.py
 ```
 
-### JavaScript
+### **JavaScript**
 ```sh
 cd Structural/Composite/JavaScript
 node main.js
