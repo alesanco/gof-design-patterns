@@ -345,7 +345,8 @@ if __name__ == "__main__":
 ```
 
 ### **JavaScript Implementation**
-```javascript// fileSystemComponent.js
+```javascript
+// fileSystemComponent.js
 
 class FileSystemComponent {
   showDetails() {
