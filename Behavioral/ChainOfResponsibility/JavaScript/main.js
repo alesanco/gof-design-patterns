@@ -1,8 +1,8 @@
 // main.js
 
-const BasicSupport = require("./BasicSupport");
-const Supervisor = require("./Supervisor");
-const Manager = require("./Manager");
+const BasicSupport = require("./basicSupport");
+const Supervisor = require("./supervisor");
+const Manager = require("./manager");
 
 const basic = new BasicSupport();
 const supervisor = new Supervisor();

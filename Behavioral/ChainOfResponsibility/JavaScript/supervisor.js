@@ -1,6 +1,6 @@
 // Supervisor.js
 
-const SupportHandler = require("./SupportHandler");
+const SupportHandler = require("./supportHandler");
 
 class Supervisor extends SupportHandler {
   handleRequest(request) {

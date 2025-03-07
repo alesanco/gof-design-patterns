@@ -1,6 +1,6 @@
 // BasicSupport.js
 
-const SupportHandler = require("./SupportHandler");
+const SupportHandler = require("./supportHandler");
 
 class BasicSupport extends SupportHandler {
   handleRequest(request) {

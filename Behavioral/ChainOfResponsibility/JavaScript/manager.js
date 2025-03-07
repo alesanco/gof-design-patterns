@@ -1,6 +1,6 @@
 // Manager.js
 
-const SupportHandler = require("./SupportHandler");
+const SupportHandler = require("./supportHandler");
 
 class Manager extends SupportHandler {
   handleRequest(request) {
