@@ -3,8 +3,9 @@
 ## 📌 What is the Proxy Pattern?
 The **Proxy Pattern** is a structural design pattern that **acts as an intermediary** between a client and an actual object. It controls access, enhances security, or optimizes performance by introducing an additional layer between the client and the real service.
 
-## 📌 When to use Proxy
+## 📌 When to Use Proxy
 Use the **Proxy pattern** when:
+
 - You need to **control access** to an object.
 - An object is **resource-intensive** and should be **loaded only when needed**.
 - You want to **add logging, security checks, caching, or lazy initialization** before interacting with the real object.

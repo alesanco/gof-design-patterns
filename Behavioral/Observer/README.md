@@ -5,6 +5,7 @@ The **Observer Pattern** is a behavioral design pattern where an object (the **s
 
 ## 📌 When to Use Observer
 Use the **Observer pattern** when:
+
 - Multiple objects need to be notified when another object's state changes.
 - An object should not depend on the concrete classes of its listeners.
 - Implementing **event-driven architectures**, UI frameworks, or pub-sub systems.

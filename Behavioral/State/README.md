@@ -3,8 +3,9 @@
 ## 📌 What is the State Pattern?
 The **State Pattern** is a behavioral design pattern that **allows an object to alter its behavior when its internal state changes**. Instead of using large conditional statements, this pattern encapsulates state-specific behavior inside separate classes.
 
-## 📌 When to Use the State Pattern
+## 📌 When to Use State
 Use the **State pattern** when:
+
 - An object's behavior depends on its state and changes dynamically.
 - Multiple conditional statements control state-dependent behavior.
 - State-specific logic needs to be encapsulated to improve maintainability.

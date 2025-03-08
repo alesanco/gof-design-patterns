@@ -5,6 +5,7 @@ The **Facade Pattern** is a structural design pattern that provides a **simplifi
 
 ## 📌 When to Use Facade
 Use the **Facade pattern** when:
+
 - You want to **simplify interactions** with a complex system.
 - Multiple subsystems have **intricate dependencies**, and you need a single entry point to manage them.
 - You need to **decouple the client from the subsystem**, improving maintainability and flexibility.

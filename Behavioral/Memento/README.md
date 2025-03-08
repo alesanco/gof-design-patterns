@@ -5,6 +5,7 @@ The **Memento Pattern** is a behavioral design pattern that allows an object to 
 
 ## 📌 When to Use Memento
 Use the **Memento pattern** when:
+
 - You need to implement **undo/redo functionality**.
 - An object's state must be **restored to a previous version** without exposing its internal details.
 - Saving and restoring state **should not break encapsulation**.

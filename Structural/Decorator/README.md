@@ -5,6 +5,7 @@ The **Decorator Pattern** is a structural design pattern that allows adding **ne
 
 ## 📌 When to Use Decorator
 Use the **Decorator pattern** when:
+
 - You want to **add responsibilities dynamically** to objects **at runtime**.
 - Extending a class via **subclassing is impractical** or would lead to an excessive number of subclasses.
 - You need a **flexible alternative to subclassing** for extending functionality.

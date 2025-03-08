@@ -3,8 +3,9 @@
 ## 📌 What is the Builder Pattern?
 The **Builder pattern** is a **creational design pattern** used to construct **complex objects step by step**. Instead of using large constructors with many parameters (**Telescoping Constructor Problem**), the Builder pattern **allows incremental construction** through a series of method calls.
 
-## 📌 When to Use the Builder Pattern
+## 📌 When to Use Builder
 Use the **Builder pattern** when:
+
 - You need to create objects with **many optional parameters**.
 - The object construction process is **complicated**.
 - You want to avoid **large constructors with multiple parameters**.

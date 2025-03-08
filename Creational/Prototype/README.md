@@ -3,8 +3,9 @@
 ## 📌 What is the Prototype Pattern?
 The **Prototype pattern** is a **creational design pattern** used to **clone objects** instead of creating new instances from scratch. This is useful when object creation is expensive or when we need multiple instances with minor modifications.
 
-## 📌 When to Use the Prototype Pattern
+## 📌 When to Use Prototype
 Use the **Prototype pattern** when:
+
 - Object creation is **costly** (e.g., deep object initialization).
 - You need **copies of an existing object with modifications**.
 - You want to **avoid creating subclasses for variations**.

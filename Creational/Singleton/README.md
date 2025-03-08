@@ -5,6 +5,7 @@ The **Singleton pattern** ensures that a class has **only one instance** and pro
 
 ## 📌 When to Use Singleton
 Use the **Singleton pattern** when:
+
 - You need to **control access** to a shared resource (e.g., logging, configuration).
 - You want to **prevent multiple instances** from being created (e.g., a database connection pool).
 - Global access is required, but **without using global variables**.

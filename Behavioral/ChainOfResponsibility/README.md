@@ -5,6 +5,7 @@ The **Chain of Responsibility Pattern** is a behavioral design pattern that **al
 
 ## 📌 When to Use Chain of Responsibility
 Use the **Chain of Responsibility pattern** when:
+
 - Multiple handlers might process a request but **only one should handle it**.
 - Requests should be **dynamically passed** through different processing chains.
 - Decoupling request senders from receivers is required, **avoiding direct dependencies**.

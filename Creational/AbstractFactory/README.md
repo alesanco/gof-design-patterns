@@ -5,6 +5,7 @@ The **Abstract Factory pattern** is a creational design pattern that provides an
 
 ## 📌 When to Use Abstract Factory
 Use the **Abstract Factory pattern** when:
+
 - You need to create **families of related products** (e.g., different UI components for Windows and MacOS).
 - Your code **should not depend on specific concrete classes**.
 - You want to **ensure consistency** across product families.

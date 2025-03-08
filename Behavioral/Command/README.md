@@ -4,9 +4,11 @@
 The **Command Pattern** is a behavioral design pattern that **encapsulates a request as an object**, allowing clients to parameterize methods with different requests, delay execution, or queue operations. It helps in decoupling the sender (Invoker) from the receiver (Receiver).
 
 ## 📌 When to Use Command
-- When you need to **encapsulate requests as objects**.
-- When implementing **undo/redo functionality**.
-- When you want to **decouple request senders from receivers**, allowing flexible command execution.
+Use the **Command pattern** when:
+
+- You need to **encapsulate requests as objects**.
+- Implementing **undo/redo functionality**.
+- You want to **decouple request senders from receivers**, allowing flexible command execution.
 
 ## 📌 Example: Smart Home Remote Control
 A **smart home system** where a remote control can send commands to a **light** to turn it ON or OFF. The remote can store different commands dynamically.

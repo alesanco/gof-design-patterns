@@ -5,6 +5,7 @@ The **Composite Pattern** is a structural design pattern that allows treating in
 
 ## 📌 When to Use Composite
 Use the **Composite pattern** when:
+
 - You need to **represent part-whole hierarchies**.
 - Clients should **treat individual objects and groups of objects uniformly**.
 - Working with **recursive structures**, such as tree-like data structures.

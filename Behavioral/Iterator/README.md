@@ -5,6 +5,7 @@ The **Iterator Pattern** is a behavioral design pattern that provides a way to a
 
 ## 📌 When to Use Iterator
 Use the **Iterator Iterator** when:
+
 - When you need to **iterate through a collection** without exposing its internal representation.
 - When a collection should provide **multiple ways to traverse** its elements.
 - When you need a **uniform interface** for different types of collections.

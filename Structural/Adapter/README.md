@@ -3,8 +3,9 @@
 ## 📌 What is the Adapter Pattern?
 The **Adapter pattern** is a **structural design pattern** used to allow **incompatible interfaces to work together**. It acts as a **bridge** between two existing components, converting one interface into another that the client expects.
 
-## 📌 When to Use the Adapter Pattern
+## 📌 When to Use Adapter
 Use the **Adapter pattern** when:
+
 - You need to **reuse an existing class** that has an **incompatible interface**.
 - You want to **convert the interface of an existing class** into one that the client expects.
 - You need to **allow an existing class to work with other classes without modifying its source code**.

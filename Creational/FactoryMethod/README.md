@@ -5,6 +5,7 @@ The **Factory Method pattern** provides an interface for creating objects in a *
 
 ## 📌 When to Use Factory Method
 Use the **Factory Method pattern** when:
+
 - You want to delegate **object creation** to subclasses.
 - You need to **extend the creation logic** without modifying existing code.
 - A class **doesn't know what specific subclass it should instantiate**.

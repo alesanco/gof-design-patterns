@@ -3,8 +3,9 @@
 ## 📌 What is the Strategy Pattern?
 The **Strategy Pattern** is a behavioral design pattern that **defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime**. This pattern allows the algorithm to be selected at runtime instead of being hardcoded into the client.
 
-## 📌 When to Use the Strategy Pattern
+## 📌 When to Use Strategy
 Use the **Strategy pattern** when:
+
 - There are multiple ways to perform an operation and selecting the method dynamically is needed.
 - There is a need to **eliminate multiple conditional statements** controlling different behaviors.
 - Algorithms must be **encapsulated and interchangeable** without modifying client code.

@@ -5,6 +5,7 @@ The **Interpreter Pattern** is a behavioral design pattern that **defines a way 
 
 ## 📌 When to Use Interpreter
 Use the **Interpreter pattern** when:
+
 - You need to evaluate expressions based on a defined **grammar or set of rules**.
 - Implementing a **language interpreter, command processor, or math expression evaluator**.
 - Processing structured inputs where **recursion and parsing techniques** are required.

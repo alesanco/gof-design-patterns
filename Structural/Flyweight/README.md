@@ -5,6 +5,7 @@ The **Flyweight Pattern** is a structural design pattern that **reduces memory u
 
 ## 📌 When to Use Flyweight
 Use the **Flyweight pattern** when:
+
 - A large number of objects exist, leading to **high memory consumption**.
 - Objects **share common, unchanging data** that can be reused.
 - Performance optimization is necessary due to **excessive object creation**.

@@ -5,6 +5,7 @@ The **Bridge Pattern** is a **structural design pattern that decouples an abstra
 
 ## 📌 When to Use Bridge
 Use the **Bridge pattern** when:
+
 - You want to **separate abstraction from implementation** so they can be extended independently.
 - You have **multiple variations of a class** that need to be managed efficiently.
 - A **strong coupling between abstraction and implementation** would make the system hard to maintain and extend.
