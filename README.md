@@ -70,7 +70,7 @@ The **naming convention** follows the following rules:
 | **JavaScript** | PascalCase (`Singleton/`) | camelCase (`singleton.js`) | `main.js` |
 
 **Why This Structure?**
-- **Consistent & Readable:** Matches each language’s standard conventions.  
+- **Consistent & Readable:** Matches each language's standard conventions.  
 - **Unified Execution Naming:** The **"main"** file name is consistent across languages (`Main.java`, `main.py`, `main.js`, etc.).  
 - **Easier Comparison:** This makes it simpler to compare implementations across different programming paradigms.  
 
@@ -106,7 +106,7 @@ The **naming convention** follows the following rules:
 | **Interpreter** | Defines a grammar and interpreter for language rules. |
 | **Iterator** | Provides sequential access to elements without exposing structure. |
 | **Mediator** | Centralizes communication between multiple objects. |
-| **Memento** | Captures and restores an object’s state. |
+| **Memento** | Captures and restores an object's state. |
 | **Observer** | Defines a dependency where state changes notify subscribers. |
 | **State** | Alters object behavior based on internal state changes. |
 | **Strategy** | Defines interchangeable algorithms at runtime. |
