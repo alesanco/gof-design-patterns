@@ -5,9 +5,9 @@ The **Mediator Pattern** is a behavioral design pattern that reduces **direct de
 
 ## 📌 When to Use Mediator
 Use the **Mediator pattern** when:
-- When a system has **many interacting components**, and direct communication would create a complex dependency structure.
-- When changes in one component should not require modifications in others.
-- When communication logic needs to be centralized for better control and reusability.
+- A system has **many interacting components**, and direct communication would create a complex dependency structure.
+- Changes in one component should not require modifications in others.
+- Communication logic needs to be centralized for better control and reusability.
 
 ## 📌 Example: Chat Application Mediator
 We implement a **chat system** where users send messages to each other. Instead of **direct messaging**, the **ChatMediator** manages communication between users.
