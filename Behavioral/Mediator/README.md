@@ -13,10 +13,10 @@ Use the **Mediator pattern** when:
 ## 📌 Example: Chat Application Mediator
 We implement a **chat system** where users send messages to each other. Instead of **direct messaging**, the **ChatMediator** manages communication between users.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Mediator pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Mediator.java
 
@@ -104,7 +104,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IMediator.cs
 
@@ -191,7 +191,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Mediator.h
 
@@ -337,7 +337,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # mediator.py
 
@@ -420,7 +420,7 @@ if __name__ == "__main__":
   user2.send_message("Hey Alice!")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // mediator.js
 
@@ -520,43 +520,43 @@ user1.sendMessage("Hello, everyone!");
 user2.sendMessage("Hey Alice!");
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Mediator pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Mediator/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Mediator/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Mediator/Cpp
 g++ *.cpp -o mediator
 ./mediator
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Mediator/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Mediator/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Alice sends: Hello, everyone!
 Bob receives: Hello, everyone!

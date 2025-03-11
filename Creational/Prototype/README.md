@@ -13,10 +13,10 @@ Use the **Prototype pattern** when:
 ## 📌 Example: Shape Cloning
 Imagine we are designing a **Shape Cloning System** where we can create copies of existing **Circles** and **Squares** instead of manually constructing them.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Prototype pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Shape.java
 
@@ -143,7 +143,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // Shape.cs
 
@@ -239,7 +239,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Shape.h
 
@@ -414,7 +414,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # shape.py
 
@@ -506,7 +506,7 @@ if __name__ == "__main__":
   cloned_square.draw()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // shape.js
 
@@ -616,43 +616,43 @@ clonedCircle.draw();
 clonedSquare.draw();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Prototype pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Creational/Prototype/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Creational/Prototype/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Creational/Prototype/Cpp
 g++ *.cpp -o prototype
 ./prototype
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Creational/Prototype/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Creational/Prototype/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Original Objects:
 Drawing a Red Circle with radius 10

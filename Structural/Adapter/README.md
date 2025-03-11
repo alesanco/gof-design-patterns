@@ -13,10 +13,10 @@ Use the **Adapter pattern** when:
 ## 📌 Example: Media Player Adapter
 Imagine we have a **Media Player** that only supports **MP3 files**, but we need it to also play **MP4 and VLC files**. Instead of modifying the existing player, we use an **Adapter** that allows it to support new formats.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Adapter pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // MediaPlayer.java
 public interface MediaPlayer {
@@ -112,7 +112,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IMediaPlayer.cs
 public interface IMediaPlayer {
@@ -215,7 +215,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // IMediaPlayer.h
 #ifndef IMEDIAPLAYER_H
@@ -388,7 +388,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # media_player.py
 from abc import ABC, abstractmethod
@@ -483,7 +483,7 @@ if __name__ == "__main__":
   player.play("AVI", "unsupported.avi")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // mediaPlayer.js
 class MediaPlayer {
@@ -603,43 +603,43 @@ player.play("VLC", "movie.vlc");
 player.play("AVI", "unsupported.avi");
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Adapter pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Adapter/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Adapter/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Adapter/Cpp
 g++ *.cpp -o adapter
 ./adapter
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Adapter/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Adapter/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Playing MP3 file: song.mp3
 Playing MP4 file: video.mp4

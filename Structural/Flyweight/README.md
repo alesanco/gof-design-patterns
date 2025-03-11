@@ -13,9 +13,9 @@ Use the **Flyweight pattern** when:
 ## 📌 Example: Text Editor Character Storage
 Imagine a **text editor** that processes a large amount of text. Instead of creating a new object for each character, the **Flyweight pattern** allows **reusing character objects**, significantly reducing memory consumption.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // FlyweightCharacter.java
 
@@ -88,7 +88,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // FlyweightCharacter.cs
 
@@ -167,7 +167,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // FlyweightCharacter.h
 
@@ -302,7 +302,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # flyweight_character.py
 
@@ -364,7 +364,7 @@ if __name__ == "__main__":
   editor.display_characters()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // flyweightCharacter.js
 
@@ -439,43 +439,43 @@ for (const char of text) {
 editor.displayCharacters();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Flyweight pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Flyweight/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Flyweight/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Flyweight/Cpp
 g++ *.cpp -o flyweight
 ./flyweight
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Flyweight/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Flyweight/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Character: H
 Character: e

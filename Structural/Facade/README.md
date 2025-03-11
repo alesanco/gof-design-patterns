@@ -13,10 +13,10 @@ Use the **Facade pattern** when:
 ## 📌 Example: Home Theater System
 Imagine a **home theater system** with multiple components like a **DVD player, projector, sound system, and screen**. Instead of exposing each component individually, we provide a **single `HomeTheaterFacade` class** to control them all.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Facade pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // DVDPlayer.java
 
@@ -135,7 +135,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // DVDPlayer.cs
 
@@ -266,7 +266,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // DVDPlayer.h
 
@@ -475,7 +475,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # dvd_player.py
 
@@ -578,7 +578,7 @@ if __name__ == "__main__":
   home_theater.end_movie()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // dvdPlayer.js
 
@@ -709,43 +709,43 @@ homeTheater.watchMovie("Inception");
 homeTheater.endMovie();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Facade pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Facade/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Facade/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Facade/Cpp
 g++ *.cpp -o facade
 ./facade
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Facade/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Facade/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Getting ready to watch a movie...
 Screen is lowered.

@@ -13,10 +13,10 @@ Use the **Visitor pattern** when:
 ## 📌 Example: Shape Processing System
 A **Shape Processing System** where different shapes (Circle, Square) need to be visited by different operations like **Rendering** and **Exporting**.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Visitor pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // ShapeVisitor.java
 
@@ -108,7 +108,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IShapeVisitor.cs
 
@@ -198,7 +198,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // ShapeVisitor.h
 
@@ -377,7 +377,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # shape_visitor.py
 
@@ -467,7 +467,7 @@ if __name__ == "__main__":
     shape.accept(export_visitor)
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // shapeVisitor.js
 
@@ -574,43 +574,43 @@ console.log("\nApplying Export Visitor:");
 shapes.forEach(shape => shape.accept(exportVisitor));
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Visitor pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Visitor/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Visitor/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Visitor/Cpp
 g++ *.cpp -o visitor
 ./visitor
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Visitor/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Visitor/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Applying Render Visitor:
 Rendering a Circle.

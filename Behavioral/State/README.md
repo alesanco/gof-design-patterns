@@ -19,10 +19,10 @@ We implement a **Traffic Light System** where the traffic light cycles through d
 
 Each state transitions dynamically without the main object knowing its next state in advance.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **State pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // TrafficLightState.java
 
@@ -96,7 +96,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // ITrafficLightState.cs
 
@@ -175,7 +175,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // TrafficLightState.h
 
@@ -336,7 +336,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # traffic_light_state.py
 
@@ -407,7 +407,7 @@ if __name__ == "__main__":
     traffic_light.change()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // trafficLightState.js
 
@@ -503,43 +503,43 @@ for (let i = 0; i < 6; i++) {
 }
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **State pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/State/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/State/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/State/Cpp
 g++ *.cpp -o state
 ./state
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/State/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/State/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Red Light - STOP!
 Green Light - GO!

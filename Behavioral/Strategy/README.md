@@ -19,10 +19,10 @@ A **Payment Processing System** where users can choose between different payment
 
 Each payment method is encapsulated as a separate strategy that can be switched dynamically.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Strategy pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // PaymentStrategy.java
 
@@ -116,7 +116,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IPaymentStrategy.cs
 
@@ -217,7 +217,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // PaymentStrategy.h
 
@@ -398,7 +398,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # payment_strategy.py
 
@@ -482,7 +482,7 @@ if __name__ == "__main__":
   processor.process_payment(200.0)
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // paymentStrategy.js
 
@@ -591,43 +591,43 @@ processor.setPaymentStrategy(new BitcoinPayment("1A2b3C4d5E6f7G8h9I"));
 processor.processPayment(200.0);
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Strategy pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Strategy/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Strategy/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Strategy/Cpp
 g++ *.cpp -o strategy
 ./strategy
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Strategy/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Strategy/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Paid $100.0 using Credit Card (Card Number: 1234-5678-9876-5432)
 Paid $50.0 using PayPal (Email: user@example.com)

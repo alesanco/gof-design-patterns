@@ -13,10 +13,10 @@ Use the **Interpreter pattern** when:
 ## 📌 Example: Mathematical Expression Interpreter
 We implement an **expression evaluator** that can parse and evaluate mathematical expressions in **postfix notation** (Reverse Polish Notation).
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Interpreter pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Expression.java
 
@@ -116,7 +116,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IExpression.cs
 
@@ -217,7 +217,7 @@ class Program {
 
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Expression.h
 
@@ -372,7 +372,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # expression.py
 
@@ -460,7 +460,7 @@ if __name__ == "__main__":
   print("Result:", result)  # Output: 6
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // expression.js
 
@@ -570,43 +570,43 @@ const result = parsedExpression.interpret();
 console.log("Result:", result); // Output: 6
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Interpreter pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Behavioral/Interpreter/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Behavioral/Interpreter/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Behavioral/Interpreter/Cpp
 g++ *.cpp -o interpreter
 ./interpreter
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Behavioral/Interpreter/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Behavioral/Interpreter/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Result: 6
 ```

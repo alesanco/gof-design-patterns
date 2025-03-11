@@ -22,8 +22,6 @@ Each pattern is implemented in **multiple languages** for easy cross-language co
 
 This balance of **static** (**Java**, **C#**, **C++**) and **dynamic** (**Python**, **JavaScript**) languages provides broad coverage of **OOP patterns** while showcasing how different programming paradigms handle them.
 
----
-
 ## 📂 Project Structure
 ```
 .
@@ -74,8 +72,6 @@ The **naming convention** follows the following rules:
 - **Unified Execution Naming:** The **"main"** file name is consistent across languages (`Main.java`, `main.py`, `main.js`, etc.).  
 - **Easier Comparison:** This makes it simpler to compare implementations across different programming paradigms.  
 
----
-
 ## 🔥 Included Design Patterns
 
 ### **Creational Patterns (5)**
@@ -113,8 +109,6 @@ The **naming convention** follows the following rules:
 | **Template Method** | Defines the structure of an algorithm with steps overridden by subclasses. |
 | **Visitor** | Separates operations from object structure to allow adding new behaviors. |
 
----
-
 ## 🛠️ How to Use
 
 ### **Clone the Repository**
@@ -128,34 +122,34 @@ Each pattern folder contains working implementation examples in multiple languag
 
 For example, to run the **Singleton** pattern:
 
-**Java**:
+#### **Java**
 ```
 cd Creational/Singleton/Java
 javac *.java
 java Main
 ```
 
-**C#**:
+#### **C#**
 ```
 cd Creational/Singleton/CSharp
 dotnet build
 dotnet run
 ```
 
-**C++**:
+#### **C++**
 ```
 cd Creational/Singleton/Cpp
 g++ *.cpp -o singleton
 ./singleton
 ```
 
-**Python**:
+#### **Python**
 ```
 cd Creational/Singleton/Python
 python3 main.py
 ```
 
-**JavaScript**:
+#### **JavaScript**
 ```
 cd Creational/Singleton/JavaScript
 node main.js

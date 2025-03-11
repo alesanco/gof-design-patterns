@@ -13,10 +13,10 @@ Use the **Decorator pattern** when:
 ## 📌 Example: Coffee Customization System
 Imagine a **coffee ordering system** where customers can **customize their coffee** with additional ingredients like **milk, sugar, or caramel**. Instead of modifying the base `Coffee` class for each variation, we use **decorators** to dynamically add these features.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Decorator pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Coffee.java
 
@@ -116,7 +116,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // ICoffee.cs
 
@@ -206,7 +206,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // ICoffee.h
 
@@ -379,7 +379,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # coffee.py
 
@@ -463,7 +463,7 @@ if __name__ == "__main__":
   print(f"{sugar_milk_coffee.get_description()} -> ${sugar_milk_coffee.get_cost()}")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // coffee.js
 
@@ -569,43 +569,43 @@ const sugarMilkCoffee = new SugarDecorator(milkCoffee);
 console.log(`${sugarMilkCoffee.getDescription()} -> $${sugarMilkCoffee.getCost()}`);
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Decorator pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Decorator/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Decorator/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Decorator/Cpp
 g++ *.cpp -o decorator
 ./decorator
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Decorator/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Decorator/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Simple Coffee -> $5.0
 Simple Coffee, Milk -> $6.5

@@ -6,17 +6,17 @@ The **Iterator Pattern** is a behavioral design pattern that provides a way to a
 ## 📌 When to Use Iterator
 Use the **Iterator Iterator** when:
 
-- When you need to **iterate through a collection** without exposing its internal representation.
-- When a collection should provide **multiple ways to traverse** its elements.
-- When you need a **uniform interface** for different types of collections.
+- You need to **iterate through a collection** without exposing its internal representation.
+- A collection should provide **multiple ways to traverse** its elements.
+- You need a **uniform interface** for different types of collections.
 
 ## 📌 Example: Playlist Iterator
 We implement a **music playlist system** where users can iterate over a collection of **songs** without directly accessing the internal list.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Iterator pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Iterator.java
 
@@ -103,7 +103,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IIterator.cs
 
@@ -188,7 +188,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Iterator.h
 
@@ -330,7 +330,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # iterator.py
 
@@ -408,7 +408,7 @@ if __name__ == "__main__":
     print(iterator.next())
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // iterator.js
 
@@ -501,43 +501,43 @@ while (iterator.hasNext()) {
 }
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Iterator pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Iterator/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Iterator/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Iterator/Cpp
 g++ *.cpp -o iterator
 ./iterator
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Iterator/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Iterator/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 "Bohemian Rhapsody" by Queen
 "Imagine" by John Lennon

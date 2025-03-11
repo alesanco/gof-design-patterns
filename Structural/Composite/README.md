@@ -13,10 +13,10 @@ Use the **Composite pattern** when:
 ## 📌 Example: File System
 Imagine implementing a **file system** where both **files** and **folders** should be treated uniformly. A **folder** can contain **files** and **other folders**, forming a tree structure. The **Composite Pattern** enables recursive operations, like calculating the total size or listing contents, without distinguishing between files and folders.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Composite pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // FileSystemComponent.java
 
@@ -89,7 +89,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IFileSystemComponent.cs
 
@@ -164,7 +164,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // IFileSystemComponent.h
 
@@ -279,7 +279,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # file_system_component.py
 
@@ -345,7 +345,7 @@ if __name__ == "__main__":
   folder2.show_details()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // fileSystemComponent.js
 
@@ -420,43 +420,43 @@ folder2.addComponent(folder1);
 folder2.showDetails();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Composite pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Composite/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Composite/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Composite/Cpp
 g++ *.cpp -o composite
 ./composite
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Composite/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Composite/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Folder: Media
 File: video.mp4

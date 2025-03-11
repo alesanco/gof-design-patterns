@@ -13,10 +13,10 @@ Use the **Memento pattern** when:
 ## 📌 Example: Text Editor with Undo Functionality
 We implement a **text editor** where a user can type text and undo their changes. Instead of tracking all modifications manually, we use a **Memento object** to store snapshots of the text content.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Memento pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // EditorMemento.java
 
@@ -108,7 +108,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // EditorMemento.cs
 
@@ -198,7 +198,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // EditorMemento.h
 
@@ -341,7 +341,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # editor_memento.py
 
@@ -419,7 +419,7 @@ if __name__ == "__main__":
   print("After second undo:", editor.get_content())
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // editorMemento.js
 
@@ -518,43 +518,43 @@ editor.restore(history.undo());
 console.log("After second undo:", editor.getContent());
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Memento pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Memento/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Memento/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Memento/Cpp
 g++ *.cpp -o memento
 ./memento
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Memento/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Memento/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Current content: New content added.
 After undo: Hello, World!

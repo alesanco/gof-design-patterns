@@ -19,10 +19,10 @@ A **Data Processing System** where different types of data sources (CSV, JSON) n
 
 Each subclass implements its own **`readData()`** while keeping `processData()` and `saveData()` common.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Template Method pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // DataProcessor.java
 
@@ -85,7 +85,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // DataProcessor.cs
 
@@ -153,7 +153,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // DataProcessor.h
 
@@ -267,7 +267,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # data_processor.py
 
@@ -327,7 +327,7 @@ if __name__ == "__main__":
   json_processor.process()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // dataProcessor.js
 
@@ -398,43 +398,43 @@ const jsonProcessor = new JSONProcessor();
 jsonProcessor.process();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Template Method pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/TemplateMethod/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/TemplateMethod/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/TemplateMethod/Cpp
 g++ *.cpp -o template_method
 ./template_method
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/TemplateMethod/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/TemplateMethod/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Reading data from CSV file...
 Processing data...

@@ -20,10 +20,10 @@ Imagine we are designing a **Car Builder** that allows us to create cars **step 
 
 Instead of a constructor with many parameters, we build the car incrementally.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Builder pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Car.java
 
@@ -124,7 +124,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // Car.cs
 
@@ -229,7 +229,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Car.h
 
@@ -409,7 +409,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # car.py
 
@@ -499,7 +499,7 @@ if __name__ == "__main__":
   economy_car.show_specifications()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // car.js
 
@@ -606,43 +606,43 @@ console.log("\nEconomy Car:");
 economyCar.showSpecifications();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Builder pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Creational/Builder/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Creational/Builder/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Creational/Builder/Cpp
 g++ *.cpp -o builder
 ./builder
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Creational/Builder/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Creational/Builder/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Luxury Car:
 Car Specifications:

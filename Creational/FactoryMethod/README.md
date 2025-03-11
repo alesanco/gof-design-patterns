@@ -13,10 +13,10 @@ Use the **Factory Method pattern** when:
 ## 📌 Example: Product and Creator
 Imagine we are designing a **Product Creation System** where different types of products are created dynamically. Instead of instantiating products directly, we use a **Factory Method** to determine which product to create at runtime.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Factory Method pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Product.java
 
@@ -88,7 +88,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IProduct.cs
 
@@ -161,7 +161,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Product.h
 
@@ -318,7 +318,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # product.py
 
@@ -394,7 +394,7 @@ if __name__ == "__main__":
   product_b.use()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // product.js
 
@@ -484,43 +484,43 @@ const productB = creatorB.createProduct();
 productB.use();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Factory Method pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Creational/FactoryMethod/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Creational/FactoryMethod/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Creational/FactoryMethod/Cpp
 g++ *.cpp -o factory_method
 ./factory_method
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Creational/FactoryMethod/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Creational/FactoryMethod/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Using Product A
 Using Product B

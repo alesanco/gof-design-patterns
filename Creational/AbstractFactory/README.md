@@ -20,10 +20,10 @@ Imagine we are developing a rendering system that supports **2D and 3D rendering
 | **3D Factory**  | `Circle`    | `ThreeDRenderer` |
 | **3D Factory**  | `Square`    | `ThreeDRenderer` |
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Abstract Factory pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // RenderMode.java
 
@@ -183,7 +183,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // RenderMode.cs
 
@@ -335,7 +335,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // RenderMode.h
 
@@ -636,7 +636,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # render_mode.py
 
@@ -800,7 +800,7 @@ if __name__ == "__main__":
       renderer.render()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // renderMode.js
 
@@ -1000,43 +1000,43 @@ for (const mode of Object.values(RenderMode)) {
 }
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Abstract Factory pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Creational/AbstractFactory/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Creational/AbstractFactory/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Creational/AbstractFactory/Cpp
 g++ *.cpp -o abstract_factory
 ./abstract_factory
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Creational/AbstractFactory/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Creational/AbstractFactory/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 === Mode: TWO_D, Shape: CIRCLE ===
 Drawing a Circle

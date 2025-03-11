@@ -13,10 +13,10 @@ Use the **Singleton pattern** when:
 ## 📌 Example: Logger System
 Imagine we are designing a **Logger System** where all log messages must be written to the same log file. We need to ensure that only **one instance** of the logger exists throughout the application.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Singleton pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Logger.java
 
@@ -56,7 +56,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // Logger.cs
 
@@ -105,7 +105,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Singleton.h
 #ifndef SINGLETON_H
@@ -198,7 +198,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # logger.py
 
@@ -234,7 +234,7 @@ if __name__ == "__main__":
   print(f"Logger instances are the same: {logger1 is logger2}")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // logger.js
 
@@ -269,43 +269,43 @@ logger2.log("System running.");
 console.log(`Logger instances are the same: ${logger1 === logger2}`);
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Singleton pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Creational/Singleton/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Creational/Singleton/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Creational/Singleton/Cpp
 g++ *.cpp -o singleton
 ./singleton
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Creational/Singleton/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Creational/Singleton/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 true   (Java)
 True   (C#)

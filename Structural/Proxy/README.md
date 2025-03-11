@@ -13,10 +13,10 @@ Use the **Proxy pattern** when:
 ## 📌 Example: Video Streaming Service
 A **video streaming service** loads videos when requested. To optimize performance, a **proxy caches videos**, ensuring that previously loaded videos are retrieved instantly instead of reloading them.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Proxy pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // VideoService.java
 
@@ -76,7 +76,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IVideoService.cs
 
@@ -135,7 +135,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // IVideoService.h
 
@@ -234,7 +234,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # video_service.py
 
@@ -289,7 +289,7 @@ if __name__ == "__main__":
   proxy.load_video("movie1.mp4")  # Retrieved from cache
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // videoService.js
 
@@ -358,43 +358,43 @@ async function main() {
 main();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Proxy pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Proxy/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Proxy/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Proxy/Cpp
 g++ *.cpp -o proxy -pthread
 ./proxy
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Proxy/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Proxy/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Loading video: movie1.mp4
 Playing video: movie1.mp4

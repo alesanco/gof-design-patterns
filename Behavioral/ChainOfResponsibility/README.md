@@ -13,9 +13,9 @@ Use the **Chain of Responsibility pattern** when:
 ## 📌 Example: Customer Support Request Handling
 A **customer support system** where different levels of support (Basic, Supervisor, and Manager) handle issues. Requests that are too complex for a lower level get passed up the chain.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // SupportHandler.java
 
@@ -97,7 +97,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // SupportHandler.cs
 
@@ -184,7 +184,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // SupportHandler.h
 
@@ -323,7 +323,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # support_handler.py
 
@@ -402,7 +402,7 @@ if __name__ == "__main__":
   basic.handle_request("Advanced Issue")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // SupportHandler.js
 
@@ -499,43 +499,43 @@ basic.handleRequest("Advanced Issue");
 basic.handleRequest("Unknown Issue");
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Chain of Responsibility pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Behavioral/ChainOfResponsibility/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Behavioral/ChainOfResponsibility/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Behavioral/ChainOfResponsibility/Cpp
 g++ *.cpp -o chain_of_responsibility
 ./chain_of_responsibility
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Behavioral/ChainOfResponsibility/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Behavioral/ChainOfResponsibility/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 BasicSupport: Handling request - Basic Issue
 Supervisor: Handling request - Intermediate Issue

@@ -16,10 +16,10 @@ We implement a **News Agency** where users can subscribe to receive news updates
 - **`Subscriber` (Observer):** Receives news updates and reacts accordingly.
 - **`EmailSubscriber` & `SMSSubscriber`:** Specialized subscribers that receive updates via email or SMS.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Observer pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Observer.java
 
@@ -135,7 +135,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IObserver.cs
 
@@ -245,7 +245,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Observer.h
 
@@ -419,7 +419,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # observer.py
 
@@ -522,7 +522,7 @@ if __name__ == "__main__":
   agency.notify_observers("Update: Python Observer Example Completed!")
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // observer.js
 
@@ -638,43 +638,43 @@ agency.removeObserver(subscriber2);
 agency.notifyObservers("Update: JavaScript Observer Example Completed!");
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Observer pattern**, run the following commands:
 
-### Java
+#### **Java**
 ```sh
 cd Behavioral/Observer/Java
 javac *.java
 java Main
 ```
 
-### C#
+#### **C#**
 ```sh
 cd Behavioral/Observer/CSharp
 dotnet build
 dotnet run
 ```
 
-### C++
+#### **C++**
 ```sh
 cd Behavioral/Observer/Cpp
 g++ *.cpp -o observer
 ./observer
 ```
 
-### Python
+#### **Python**
 ```sh
 cd Behavioral/Observer/Python
 python3 main.py
 ```
 
-### JavaScript
+#### **JavaScript**
 ```sh
 cd Behavioral/Observer/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 Alice (Email) received: Breaking News: Observer Pattern Implemented!
 Bob (SMS) received: Breaking News: Observer Pattern Implemented!

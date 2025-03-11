@@ -13,10 +13,10 @@ Use the **Command pattern** when:
 ## 📌 Example: Smart Home Remote Control
 A **smart home system** where a remote control can send commands to a **light** to turn it ON or OFF. The remote can store different commands dynamically.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Command pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Command.java
 
@@ -108,7 +108,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // ICommand.cs
 
@@ -204,7 +204,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // Command.h
 
@@ -346,7 +346,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # command.py
 
@@ -429,7 +429,7 @@ if __name__ == "__main__":
   remote.press_button()  # The light is OFF.
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // command.js
 
@@ -536,43 +536,43 @@ remote.setCommand(turnOff);
 remote.pressButton(); // The light is OFF.
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Command pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Behavioral/Command/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Behavioral/Command/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Behavioral/Command/Cpp
 g++ *.cpp -o command
 ./command
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Behavioral/Command/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Behavioral/Command/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 The light is ON.
 The light is OFF.

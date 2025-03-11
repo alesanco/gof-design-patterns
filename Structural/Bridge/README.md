@@ -13,10 +13,10 @@ Use the **Bridge pattern** when:
 ## 📌 Example: Remote Control for Devices
 Imagine you are designing a **remote control system** that works with multiple devices, such as **TVs and Radios**. Instead of creating a **separate remote for each device**, the Bridge pattern allows us to separate **device behavior from remote control behavior**, making the system more flexible and maintainable.
 
-## 📌 Implementation in Different Languages
+### 📌 Implementation in Different Languages
 Each language implements the **Bridge pattern** differently based on its capabilities.
 
-### **Java Implementation**
+#### **Java Implementation**
 ```java
 // Device.java
 
@@ -178,7 +178,7 @@ public class Main {
 }
 ```
 
-### **C# Implementation**
+#### **C# Implementation**
 ```csharp
 // IDevice.cs
 
@@ -330,7 +330,7 @@ class Program {
 }
 ```
 
-### **C++ Implementation**
+#### **C++ Implementation**
 ```cpp
 // IDevice.h
 
@@ -576,7 +576,7 @@ int main() {
 }
 ```
 
-### **Python Implementation**
+#### **Python Implementation**
 ```python
 # device.py
 
@@ -728,7 +728,7 @@ if __name__ == "__main__":
   advanced_remote.mute()
 ```
 
-### **JavaScript Implementation**
+#### **JavaScript Implementation**
 ```javascript
 // device.js
 
@@ -905,43 +905,43 @@ advancedRemote.volumeUp();
 advancedRemote.mute();
 ```
 
-## 📌 Running the Code
+### 📌 Running the Code
 To test the **Bridge pattern**, run the following commands:
 
-### **Java**
+#### **Java**
 ```sh
 cd Structural/Bridge/Java
 javac *.java
 java Main
 ```
 
-### **C#**
+#### **C#**
 ```sh
 cd Structural/Bridge/CSharp
 dotnet build
 dotnet run
 ```
 
-### **C++**
+#### **C++**
 ```sh
 cd Structural/Bridge/Cpp
 g++ *.cpp -o bridge
 ./bridge
 ```
 
-### **Python**
+#### **Python**
 ```sh
 cd Structural/Bridge/Python
 python3 main.py
 ```
 
-### **JavaScript**
+#### **JavaScript**
 ```sh
 cd Structural/Bridge/JavaScript
 node main.js
 ```
 
-## 📌 Expected Output
+### 📌 Expected Output
 ```
 TV is now ON.
 TV volume set to 60
